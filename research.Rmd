@@ -1,0 +1,29 @@
+---
+title: "Research"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Nowcasting Business Cycle Phases with High and Mixed Frequency Data
+
+<img src="images/my_animation.gif" style="width:100%; border:10px solid; margin-right: 20px" align="left">
+
+- Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly, and daily frequencies from April 1962 to May 2020. 
+
+- Modeled the economic activity at daily intervals using a mixed-frequency dynamic factor model, and extracted the optimal latent economic activity factor with Kalman filter and smoother.
+
+- Measured the probability of recessions in real-time using a variety of supervised machine learning classifiers. 
+
+- Proposed a procedure to convert probabilities of recessions into a binary variable that defines whether the economy is in an expansion or a recession regime on a daily basis.
+
+**Result**: the use of higher frequency data significantly improves the speed at which expansions and recessions can be identified in the U.S. since 1980. While The National Bureau of Economic Research (NBER) announced on June 8, 2020, that a new recession started in the U.S. in March 2020, my model identified the start of this recession on March 15, 2020, 85 days ahead of the NBER announcement.
+
+_See my personal website, for the recent revisions of my research._
+
+
+# A New High Frequency, News Based, Indicator of Macroeconomic Activity
+
+# Is Response of Economic Output to Monetary Policy Asymmetric in China?

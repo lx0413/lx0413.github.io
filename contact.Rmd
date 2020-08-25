@@ -1,0 +1,14 @@
+---
+title: "Contact me"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I’d love to hear from you, so feel free to reach out:
+
+xli4@uoregon.edu
+
+Or connect with me on GitHub, Twitter, or Linkedin (links in top right).

@@ -1,0 +1,25 @@
+---
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<img src="images/IMG_5173.jpg" style="width:100%; border:10px solid; margin-right: 20px" align="left">
+
+- Ph.D. Candidate, Economics
+
+Welcome! I am a fifth-year Ph.D. candidate in Economics at the University of Oregon. I received a M.S. at the University of Illinois at Urbana Champaign in 2014. My current research focuses on nowcasting U.S. recessions using mixed-frequency macroeconomic data  and a novel high-frequency news-based sentiment index. I also study the asymmetry effects of monetary policy. Outside of economics, I enjoy swimming and weight training. I am available on the job market in the 2020-2021 academic year.
+
+**Fields of Expertise**: applied macroeconomics, time-series econometrics, forecasting, and textual analysis.
+
+**Dissertation Committee**:
+
+[Jeremy Piger](https://pages.uoregon.edu/jpiger/)(Chair)
+
+[George Evans](https://pages.uoregon.edu/gevans/)
+
+[David Evans](http://econevans.com/)
+
+[Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/) (Outside member: Computer Science)
+    
+
+
