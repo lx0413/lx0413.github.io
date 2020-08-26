@@ -1,6 +1,6 @@
 ---
 title: Xiang 'Ivy' Li
-subtitle: Ph.D. Candidate, Economics
+subtitle: Ph.D. Candidate in Economics, University of Oregon
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
@@ -21,5 +21,7 @@ Welcome! I am a fifth-year Ph.D. candidate in Economics at the University of Ore
 
 [Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/) (Outside member: Computer Science)
     
+Please contact me: xli4@uoregon.edu
+
 
 
