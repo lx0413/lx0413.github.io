@@ -16,7 +16,7 @@ As an educator in economics, I aim to create an inclusive environment where stud
 
 <img src="images/radarplot.png" style="width:50%; border:10px solid; margin-right: 20px" align="left">
 
-<img src="images/radarplot.png" style="width:50%; border:10px solid; margin-right: 20px" align="right">
+<img src="images/lineplot.png" style="width:50%; border:10px solid; margin-right: 20px" align="right">
 
 
 ## Courses as Instructor of Record:
