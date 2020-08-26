@@ -11,7 +11,7 @@
 
 
 
-<title>Research</title>
+<title>research.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -318,14 +318,13 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Research</h1>
 
 </div>
 
 
-<div id="nowcasting-business-cycle-phases-with-high-and-mixed-frequency-data" class="section level1">
-<h1>Nowcasting Business Cycle Phases with High and Mixed Frequency Data</h1>
-<p><img src="images/my_animation.gif" style="width:100%; border:10px solid; margin-right: 20px" align="left"></p>
+<div id="nowcasting-business-cycle-phases-with-high-and-mixed-frequency-data" class="section level3">
+<h3>Nowcasting Business Cycle Phases with High and Mixed Frequency Data</h3>
+<p><img src="images/my_animation.gif" style="width:50%; border:10px solid; margin-right: 20px" align="left"></p>
 <ul>
 <li><p>Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly, and daily frequencies from April 1962 to May 2020.</p></li>
 <li><p>Modeled the economic activity at daily intervals using a mixed-frequency dynamic factor model, and extracted the optimal latent economic activity factor with Kalman filter and smoother.</p></li>
@@ -333,13 +332,32 @@ $(document).ready(function () {
 <li><p>Proposed a procedure to convert probabilities of recessions into a binary variable that defines whether the economy is in an expansion or a recession regime on a daily basis.</p></li>
 </ul>
 <p><strong>Result</strong>: the use of higher frequency data significantly improves the speed at which expansions and recessions can be identified in the U.S. since 1980. While The National Bureau of Economic Research (NBER) announced on June 8, 2020, that a new recession started in the U.S. in March 2020, my model identified the start of this recession on March 15, 2020, 85 days ahead of the NBER announcement.</p>
-<p><em>See my personal website, for the recent revisions of my research.</em></p>
+<p><em>Click here for the recent revisions of this project.</em></p>
 </div>
-<div id="a-new-high-frequency-news-based-indicator-of-macroeconomic-activity" class="section level1">
-<h1>A New High Frequency, News Based, Indicator of Macroeconomic Activity</h1>
+<div id="a-new-high-frequency-news-based-indicator-of-macroeconomic-activity" class="section level3">
+<h3>A New High Frequency, News Based, Indicator of Macroeconomic Activity</h3>
+<p><img src="images/all_monthly.png" style="width:50%; border:10px solid; margin-right: 20px" align="left"></p>
+<ul>
+<li><p>Collected a large sample of lead paragraphs of 410,601 articles published in The Wall Street Journal and The Wall Street Journal Online in the United States from April 2, 1991, to April 30, 2020, that have subjects related to economic activity.</p></li>
+<li><p>Proposed a procedure to pre-process the raw text as a manageable high-dimensional numerical array, including tokenization, removing stopword, stemming, and reversing negation words.</p></li>
+<li><p>Applied dictionary methods to develop a weekly and monthly News-Based Sentiment Index (NBSI) regarding economic conditions.</p></li>
+<li><p>Assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures.</p></li>
+<li><p>Estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real-time.</p></li>
+</ul>
+<p><em>Click here for the recent revisions of this project.</em></p>
 </div>
-<div id="is-response-of-economic-output-to-monetary-policy-asymmetric-in-china" class="section level1">
-<h1>Is Response of Economic Output to Monetary Policy Asymmetric in China?</h1>
+<div id="is-response-of-economic-output-to-monetary-policy-asymmetric-in-china" class="section level3">
+<h3>Is Response of Economic Output to Monetary Policy Asymmetric in China?</h3>
+<ul>
+<li><p>Collected 34 monthly fundamental series that correlate with output and price in China.</p></li>
+<li><p>Pre-processed data to remove effects of the Lunar New Year, adjust for seasonality, impute missing values by an iterative expectation-maximization algorithm, and remove a local mean from each series using a biweight kernel.</p></li>
+<li><p>Extracted the latent economic activity factor and inflation factor from underlying variables with the first principal component using a dynamic factor model.</p></li>
+<li><p>Measured structural shocks of monetary policy from Choleski decomposition of residuals from a Factor Augmented Vector Autoregression (FAVAR) model.</p></li>
+<li><p>As in Tenreyro &amp; Thwaites (2016), I measured probabilities of the unobservable states of the economy being in high-growth &amp; low-growth states using a smooth transition logistic function, and estimated impulse response functions (IRF) of the economic activity factor and inflation factor using local projections methods.</p></li>
+</ul>
+<p><strong>Result</strong>: the monetary policy shock has larger impacts on output growth during low-growth states and that monetary policy shock has larger impacts on aggregate price during high-growth states.</p>
+<p><img src="images/field.png" style="width:100%; border:10px solid; margin-right: 20px" align="left"></p>
+<p><em>Click here for the recent revisions of this project.</em></p>
 </div>
 
 
