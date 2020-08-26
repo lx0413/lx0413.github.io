@@ -5,7 +5,9 @@ subtitle: Ph.D. Candidate in Economics, University of Oregon
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-Welcome! I am a fifth-year Ph.D. candidate in Economics at the University of Oregon. I received a M.S. at the University of Illinois at Urbana Champaign in 2014. My current research focuses on nowcasting U.S. recessions using mixed-frequency macroeconomic data  and a novel high-frequency news-based sentiment index. I also study the asymmetry effects of monetary policy. Outside of economics, I enjoy swimming and weight training. I am available on the job market in the 2020-2021 academic year.
+Welcome! I am a fifth-year Ph.D. candidate in the [Department of Economics](https://economics.uoregon.edu/) at the [University of Oregon](https://www.uoregon.edu/). I received a M.S. at the University of Illinois at Urbana Champaign in 2014. My current research focuses on nowcasting U.S. recessions using mixed-frequency macroeconomic data and a novel high-frequency news-based sentiment index. I also study the asymmetry effects of monetary policy. 
+
+Outside of economics, I enjoy swimming and weight training. I am available on the job market in the 2020-2021 academic year. In addition to academic jobs, I also seek a data scientist or quantitative analyst job in the industry. 
 
 <img src="images/IMG_5173.jpg" style="width:50%; border:10px solid; margin-right: 20px" align="left">
 
