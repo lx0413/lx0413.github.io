@@ -1,0 +1,171 @@
+---
+output: 
+  pdf_document:
+    latex_engine: pdflatex
+    #template: /Users/lixiang/Desktop/resume/svm-latex-cv.tex
+geometry: left=.7in, top=.8in, right=.8in, bottom=.7in
+
+# title: "resume"
+title: \textbf{Xiang "Ivy" LI}
+
+jobtitle: "PhD student in Economics"
+# address: "2250 Patterson Street, Unit 129, Eugene, OR, 97405"
+fontawesome: yes
+# github: 
+# twitter:
+# web: guinness.com
+updated: no
+
+keywords: R Markdown, academic CV, template
+
+fontfamily: mathpazo
+fontfamilyoptions: sc, osf
+fontsize: 10pt
+linkcolor: blue
+urlcolor: blue
+
+---
+Department of Economics  \hfill +1 (217) 904-0644
+\newline University of Oregon \hfill xli4@uoregon.edu
+\newline Eugene, OR 97405 \hfill http://lx0413.github.io
+\newline Placement Director: Sharon Kaplan, kaplan@uoregon.edu, 541-346-1261
+
+
+\rule[2ex]{\textwidth}{1pt}
+
+\vspace{-25pt}
+
+\thispagestyle{empty}
+
+# EDUCATION
+**Ph.D.**, Economics, University of Oregon, OR, USA \hfill _2021 (expected)_
+
+- Dissertation: Essays On High Frequency Macroeconomic Monitoring
+- Committee: Jeremy Piger (Chair), George Evans, David Evans, Thien H. Nguyen (Computer Science)
+- Fields of Expertise: applied macroeconomics, time-series econometrics, forecasting, textual analysis
+
+**M.S.**, Policy Economics, University of Illinois at Urbana Champaign, IL, USA \hfill _2015_
+
+**B.S.**, Economics, University of International Business and Economics, Beijing, China  \hfill _2013_
+
+  - Economics Honors Program (Minor in Japanese)
+
+# RESEARCH
+**Nowcasting Business Phases with High and Mixed Frequency Data** (Work in progress)
+
+- Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly and daily frequencies.
+- Measured the economic activity at daily intervals using dynamic factor models, and measured the probability of expansions and recessions in real time. 
+- This work elucidated that the use of higher frequency data significantly improves the speed at which expansions and recessions can be identified in U.S. since 1980.
+
+<!--- I take a three-step approach. First, I use the mixed frequency dynamic factor model to extract a coincident index of real economic activity using daily, weekly, monthly and quarterly data. Second, I train a variety of supervised machine learning classification techniques to classify the coincident index into recession and expansion regimes. Finally, I use these trained classifiers to evaluate the evidence for new business cycle turning points in end-of-sample data that has not yet been classified by the NBER. --->
+
+**A New High Frequency, News Based, Indicator of Macroeconomic Activity** (Work in progress)
+
+- Developed a weekly News-Based Sentiment Index (NBSI) regarding economic conditions based on articles sourced from The Wall Street Journal using dictionary methods.
+- Assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures. 
+- Estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real time. 
+
+**Is the Response of Economic Output to Monetary Policy Asymmetric in China?** (Working paper)
+
+- Estimated monetary policy shocks in China, using a combination of dynamic factors models and factor-augmented vector autoregression.
+- Applying local projection methods, I determined that the monetary policy shock has larger impacts on output growth during low-growth states and that monetary policy shock has larger impacts on aggregate price during high-growth states.
+
+<!--- I take a four-step approach. First, Chinese economic activity and aggregate price level are measured using dynamic factors models. Second, monetary policy shocks are identified with Choleski residuals from a factor-augmented vector autoregression. Third, high-growth vs. low-growth phases are measured using a smooth transition logistic function. Lastly, the response of economic activity and price to monetary policy shocks in high-growth periods vs. low-growth periods are estimated via the local projection method--->
+
+
+<!---
+- This paper is the first to study asymmetry in the response of monetary policy on the Chinese economy over the business cycle. Asymmetry is defined in terms of the effects of monetary policy in high-growth periods vs. low-growth periods. High-growth and low-growth phases are measured using a smooth transition logistic function. Using local projection method, I find evidence that monetary policy shocks have larger impacts on output growth during low-growth states; during high-growth states, monetary policy shocks have larger impacts on inflation. This evidence is consistent with a convex aggregate supply curve
+--->
+
+<!---
+**Forecasting Using Bayesian VAR** 
+- This paper uses a quarterly US data set on inflation rate, unemployment rate, and interest rate from 1948Q1 to 2018Q1, and then performs an (pseudo) out-of-sample 1-period and 4-period forecast
+- This paper uses Bayesian method to estimate a VAR(2) model, based on 2 analytical priors (Minnesota prior and Natural Conjugate prior), and 2 non-analytical priors (Independent Normal - Wishart prior and Stochastic Search Variable Selection prior)
+- This paper shows that SSVC prior performs a better 1-period forecast, and independent Normal-Wishart prior performs a better 4-period forecast, in terms of minimal mean squared forecast error
+- As forecast horizon gets longer, Minnesota prior generates a large forecast error. Non-analytical prior performs better than analytical priors in terms of forecast ability, especially when forecast horizon gets longer
+--->
+
+<!---
+**Detecting the Potential Conspirators** (Working paper, with Yizhi Chen and Dong Wang, Awarded Meritorious Winner of 2012 Mathematical Contest in Modeling by the Consortium for Mathematics & Applications) 
+
+- Analyzing data on confirmed criminals, this project applies degree, betweenness and connection in social network analysis to measure crime probabilities of suspects in the network.
+- I explored analytic hierarchy process and pointwise mutual information methods to quantify semantic orientation of messages conveyed in a crime network.
+--->
+
+
+# TEACHING EXPERIENCE
+**Sole Instructor**, University of Oregon (Enrollment: 20 - 85)
+
+- EC 370 Money and Banking: Summer 2018, Winter and Fall 2019, Spring 2020 (remote), Spring 2021 
+- EC 313 Intermediate Macroeconomics: Summer 2019
+  - Delivered lectures, organized lab and group discussion, and created an inclusive environment where students apply quantitative & graphical skills and economics intuition to understand the evolving real-world issues, news, and events. 
+  - Held office hours, evaluated students' performance, and assisted students outside of class to achieve personal academic goals.
+  - Turned in-person teaching into remote teaching efficiently on short notice and without much guidance, amid the Covid-19 pandemic.
+  - Organized graduate student grading assignments and exams.
+    
+**Teaching Assistant**, University of Oregon (Enrollment: 16 - 48)
+
+- EC 320 Introduction to Econometrics: Spring 2019
+- EC 202 Intro to Macroeconomic Analysis: Spring 2017, Winter 2018
+  - Taught students how to use Stata to analyze data and identify causal relationships. 
+  - Led lab discussion and organized group activities.
+  
+**Note**: Student experience survey, instructional quality ratings, student comments, and course materials written by R Markdown can be found on my website, https://sites.google.com/view/xianglieconomist/teaching
+
+
+\thispagestyle{empty}
+
+# AWARDS and RECOGNITION
+- Graduate Teaching Fellowship, University of Oregon \hfill _2016 - 2021_
+- Kleinsorge Summer Research Fellowship,  University of Oregon \hfill _2020_
+- Summer Teaching Fellowship, University of Oregon \hfill _2018 - 2019_
+- Research Assistant to Jonathan Davis, University of Oregon \hfill _2019_
+- 3rd place, 3-Minute Thesis competition, Grad Research Forum, University of Oregon \hfill _2019_
+- Research Assistant to Hong Li, Peking University \hfill _2013_
+- Meritorious Winner, Interdisciplinary Contest in Modeling, Consortium for Mathematics and Its Applications \hfill _2012_
+- University Scholarship, University of International Business and Economics \hfill _2009 - 2010_
+- 1st prize, China National English Contest for College Students \hfill _2011_
+- 3rd prize, China National English Speaking Competition \hfill _2011_
+
+<!--- - Simulated a dataset with 7000 observations and 131 variables according to the statistics of each variable
+- Reviewed R code for a project that uses random forest and causal forest methods to explore treatment heterogeneity effects of summer jobs on youth behavioral changes --->
+
+<!--- - Wrote project proposals for 2013 China National Natural Science Fund 
+- Authored literature review on correlations between resource endowment and spatial layout, rationality of spatial layout, site selection of renewable resource--->
+
+# PRESENTATIONS and CONFERENCES
+- Presented "Nowcasting Business Cycle Phases with High and Mixed Frequency Data"
+  - Economics Club, University of Oregon \hfill _2020_
+  - Macro Group, University of Oregon \hfill _2019_
+- Presented a Mini Machine Learning course on textual analysis, University of Oregon \hfill _2019_
+- Participated Google Earth Engine Workshop, Oregon State University  \hfill _2018_
+
+# PROFESSIONAL EXPERIENCE
+**Administrative Assistant, Commercial Factoring Expertise Committee of China (CFEC)** \hfill _2013 - 2014_
+
+- Analyzed data and wrote reports regarding foreign exchange rates, taxation, financing, and legal policy issues that commercial factoring companies in China are facing.
+- Cooperated with the Factors Chain International based in Amsterdam to set up education programs in China
+- Operated website and independently produced the digital magazine “CFEC Monthly”
+
+<!--- - Advanced proposals to the Ministry of Commerce that resulted in the development of standard terminology and regulation policies for commercial factoring industry in China
+- Worked with the Peoples’ Bank of China to establish a credit reference platform for factoring companies--->
+
+# TECHNICAL SKILLS
+- Programs: R, MATLAB, Python, Git
+- Languages: Mandarin, English 
+
+# PROFESSIONAL REFERENCES
+**Jeremy Piger** (Chair) \hspace{2in} **George Evans** \newline
+Department Head, Professor of Economics \hspace{0.65in}  John B. Hamacher Professor of Economics \newline
+University of Oregon \hspace{2in}  University of Oregon \newline
+(541) 346-6075 \hspace{2.4in}  (541) 346-4662 \newline
+\href{mailto:jpiger@uoregon.edu}{\texttt{jpiger@uoregon.edu}} \hspace{2in}  \href{mailto:gevans@uoregon.edu}{\texttt{gevans@uoregon.edu}}
+
+**David Evans** \hspace{2.5in} **Thien Huu Nguyen** \newline
+Assistant Professor of Economics \hspace{1.25in} Assistant Professor of Computer Science  \newline 
+University of Oregon \hspace{2in} University of Oregon \newline
+(541) 346-3431 \hspace{2.4in}  (541) 346-1398 \newline \href{mailto:thien@cs.uoregon.edu}{\texttt{thien@cs.uoregon.edu}} \hspace{1.8in}
+\href{mailto:devans@uoregon.edu}{\texttt{devans@uoregon.edu}} 
+
+
+
