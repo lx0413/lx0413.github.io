@@ -92,21 +92,22 @@ Department of Economics  \hfill +1 (217) 904-0644
 - I explored analytic hierarchy process and pointwise mutual information methods to quantify semantic orientation of messages conveyed in a crime network.
 --->
 
+\newpage
 
 # TEACHING EXPERIENCE
-**Sole Instructor**, University of Oregon (Enrollment: 20 - 85)
+**Sole Instructor**, University of Oregon
 
-- EC 370 Money and Banking: Summer 2018, Winter and Fall 2019, Spring 2020 (remote), Spring 2021 
-- EC 313 Intermediate Macroeconomics: Summer 2019
+- EC 370 Money and Banking: Summer 2018 (enrolled: 27), Winter 2019 (enrolled: 85), Fall 2019 (enrolled: 77), Spring 2020 (remote, enrolled: 86), Spring 2021 (forthcoming)
+- EC 313 Intermediate Macroeconomics: Summer 2019 (enrolled: 20)
   - Delivered lectures, organized lab and group discussion, and created an inclusive environment where students apply quantitative & graphical skills and economics intuition to understand the evolving real-world issues, news, and events. 
   - Held office hours, evaluated students' performance, and assisted students outside of class to achieve personal academic goals.
   - Turned in-person teaching into remote teaching efficiently on short notice and without much guidance, amid the Covid-19 pandemic.
   - Organized graduate student grading assignments and exams.
     
-**Teaching Assistant**, University of Oregon (Enrollment: 16 - 48)
+**Teaching Assistant**, University of Oregon 
 
-- EC 320 Introduction to Econometrics: Spring 2019
-- EC 202 Intro to Macroeconomic Analysis: Spring 2017, Winter 2018
+- EC 320 Introduction to Econometrics: Spring 2019 (enrolled: 16, 31)
+- EC 202 Intro to Macroeconomic Analysis: Spring 2017 (enrolled: 31, 45, 45, 45), Winter 2018 (enrolled: 33, 46, 48, 48)
   - Taught students how to use Stata to analyze data and identify causal relationships. 
   - Led lab discussion and organized group activities.
   

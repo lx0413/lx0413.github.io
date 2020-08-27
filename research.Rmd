@@ -10,9 +10,9 @@ knitr::opts_chunk$set(echo = TRUE)
 <div style="margin-bottom:50px;">
 </div>
 
-<center>
-**Nowcasting Business Cycle Phases with High and Mixed Frequency Data**
-</center>
+
+#### Nowcasting Business Cycle Phases with High and Mixed Frequency Data
+
 
 In this paper, I developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly, and daily frequencies from April 1962 to May 2020. I modeled the economic activity at daily intervals using a mixed-frequency dynamic factor model, and extracted the optimal latent economic activity factor with Kalman filter and smoother. I measured the probability of recessions in real-time using a variety of supervised machine learning classifiers. I also Proposed a procedure to convert probabilities of recessions into a binary variable that defines whether the economy is in an expansion or a recession regime on a daily basis.
 
@@ -28,9 +28,9 @@ In this paper, I developed a novel real-time dataset of macroeconomic variables 
 <div style="margin-bottom:50px;">
 </div>
 
-<center>
-**A New High Frequency, News Based, Indicator of Macroeconomic Activity**
-</center>
+
+#### A New High Frequency, News Based, Indicator of Macroeconomic Activity
+
 
 In this paper, I collected a large sample of lead paragraphs of 410,601 articles published in The Wall Street Journal and The Wall Street Journal Online in the United States from April 2, 1991, to April 30, 2020, that have subjects related to economic activity. I proposed a procedure to pre-process the raw text as a manageable high-dimensional numerical array, including tokenization, removing stopword, stemming, and reversing negation words. I applied dictionary methods to develop a weekly and monthly News-Based Sentiment Index (NBSI) regarding economic conditions. 
 
@@ -45,9 +45,9 @@ In this paper, I collected a large sample of lead paragraphs of 410,601 articles
 <div style="margin-bottom:50px;">
 </div>
 
-<center>
-**Is Response of Economic Output to Monetary Policy Asymmetric in China?**
-</center>
+
+#### Is Response of Economic Output to Monetary Policy Asymmetric in China?
+
 
 In this paper, I collected 34 monthly fundamental series that correlate with output and price in China. I pre-processed data to remove effects of the Lunar New Year, adjust for seasonality, impute missing values by an iterative expectation-maximization algorithm, and remove a local mean from each series using a biweight kernel. I extracted the latent economic activity factor and inflation factor from underlying variables with the first principal component using a dynamic factor model. I measured structural shocks of monetary policy from Choleski decomposition of residuals from a Factor Augmented Vector Autoregression (FAVAR) model. As in Tenreyro & Thwaites (2016), I measured probabilities of the unobservable states of the economy being in high-growth & low-growth states using a smooth transition logistic function, and estimated impulse response functions (IRF) of the economic activity factor and inflation factor using local projections methods. 
 
