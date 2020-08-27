@@ -92,6 +92,8 @@ Department of Economics  \hfill +1 (217) 904-0644
 - I explored analytic hierarchy process and pointwise mutual information methods to quantify semantic orientation of messages conveyed in a crime network.
 --->
 
+**Note**: the recent revisions of projects can be found on my website, https://lx0413.github.io/research.html
+
 \newpage
 
 # TEACHING EXPERIENCE
@@ -111,7 +113,7 @@ Department of Economics  \hfill +1 (217) 904-0644
   - Taught students how to use Stata to analyze data and identify causal relationships. 
   - Led lab discussion and organized group activities.
   
-**Note**: Student experience survey, instructional quality ratings, student comments, and course materials written by R Markdown can be found on my website, https://lx0413.github.io/teaching.html
+**Note**: student experience survey, instructional quality ratings, student comments, and course materials written by R Markdown can be found on my website, https://lx0413.github.io/teaching.html
 
 
 \thispagestyle{empty}
