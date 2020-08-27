@@ -10,6 +10,11 @@ knitr::opts_chunk$set(echo = TRUE)
 <div style="margin-bottom:50px;">
 </div>
 
+**Click [here](files/Prospectus_2020May29.pdf) for the recent presentation of the projects below.**
+
+
+<div style="margin-bottom:50px;">
+</div>
 
 #### Nowcasting Business Cycle Phases with High and Mixed Frequency Data
 
@@ -18,11 +23,11 @@ In this paper, I developed a novel real-time dataset of macroeconomic variables 
 
 **Result**: the use of higher frequency data significantly improves the speed at which expansions and recessions can be identified in the U.S. since 1980. While The National Bureau of Economic Research (NBER) announced on June 8, 2020, that a new recession started in the U.S. in March 2020, my model identified the start of this recession on March 15, 2020, 85 days ahead of the NBER announcement.
 
+_Click [here](files/CHAPTER3.pdf) for the recent revisions of this project._
+
 <center>
 <img src="images/my_animation.gif" style="width:50%; border:3px solid; margin-right: 40px" align="center">
 </center>
-
-<!-- _Click here for the recent revisions of this project._ -->
 
 
 <div style="margin-bottom:50px;">
@@ -36,11 +41,12 @@ In this paper, I collected a large sample of lead paragraphs of 410,601 articles
 
 <!-- I assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures, and estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real-time.  -->
 
+_Click [here](files/CHAPTER4.pdf) for the recent revisions of this project._
+
 <center>
 <img src="images/all_monthly.png" style="width:75%; border:3px solid; margin-right: 20px" align="center">
 </center>
 
-<!-- _Click here for the recent revisions of this project._ -->
 
 <div style="margin-bottom:50px;">
 </div>
@@ -53,9 +59,9 @@ In this paper, I collected 34 monthly fundamental series that correlate with out
 
 **Result**: the monetary policy shock has larger impacts on output growth during low-growth states and that monetary policy shock has larger impacts on aggregate price during high-growth states.
 
+_Click [here](files/CHAPTER2.pdf) for the recent revisions of this project._
+
 <center>
 <img src="images/field.png" style="width:100%; border:3px solid; margin-right: 20px" align="left">
 </center>
 
-
-<!-- _Click here for the recent revisions of this project._ -->
