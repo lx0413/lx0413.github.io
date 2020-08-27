@@ -110,7 +110,7 @@ Department of Economics  \hfill +1 (217) 904-0644
   - Taught students how to use Stata to analyze data and identify causal relationships. 
   - Led lab discussion and organized group activities.
   
-**Note**: Student experience survey, instructional quality ratings, student comments, and course materials written by R Markdown can be found on my website, https://sites.google.com/view/xianglieconomist/teaching
+**Note**: Student experience survey, instructional quality ratings, student comments, and course materials written by R Markdown can be found on my website, https://lx0413.github.io/teaching.html
 
 
 \thispagestyle{empty}
