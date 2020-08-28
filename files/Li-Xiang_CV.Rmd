@@ -27,9 +27,7 @@ urlcolor: blue
 ---
 Department of Economics  \hfill +1 (217) 904-0644
 \newline University of Oregon \hfill xli4@uoregon.edu
-\newline Eugene, OR 97405 \hfill http://lx0413.github.io
-\newline Placement Director: Sharon Kaplan, kaplan@uoregon.edu, 541-346-1261
-
+\newline Eugene, OR 97403 \hfill http://lx0413.github.io
 
 \rule[2ex]{\textwidth}{1pt}
 
@@ -169,6 +167,3 @@ Assistant Professor of Economics \hspace{1.25in} Assistant Professor of Computer
 University of Oregon \hspace{2in} University of Oregon \newline
 (541) 346-3431 \hspace{2.4in}  (541) 346-1398 \newline \href{mailto:thien@cs.uoregon.edu}{\texttt{thien@cs.uoregon.edu}} \hspace{1.8in}
 \href{mailto:devans@uoregon.edu}{\texttt{devans@uoregon.edu}} 
-
-
-
