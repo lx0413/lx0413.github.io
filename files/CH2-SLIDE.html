@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Are the Effects of Monetary Policy Asymmetric in China?</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Xiang LI" />
+    <meta name="date" content="2020-05-29" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Are the Effects of Monetary Policy Asymmetric in China?
+### Xiang LI
+### May 29, 2020
+
+---
+
+&lt;style&gt;
+  .large { font-size: 200% }
+  .small { font-size: 50% }
+&lt;/style&gt;
+
+&lt;style type="text/css"&gt;
+.remark-slide-content {
+    font-size: 21px;
+    padding: 1em 1em 1em 1em;
+}
+
+.remark-slide-content h1 {
+  font-size: 26px;
+}
+
+.remark-slide-content h2 {
+  font-size: 25px;
+}
+
+.remark-slide-content h3 {
+  font-size: 24px;
+}
+
+h1 {
+  font-weight: normal;
+  margin-top: -80px;
+  margin-left: -00px;
+  color: #FAFAFA;
+}
+
+&lt;/style&gt;
+
+
+
+
+
+
+# Are the Effects of Monetary Policy Asymmetric in China?
+## Introduction
+
+???
+
+- **Most papers find that monetary policy is more powerful in affecting output during recessions than during expansions**
+
+- **However, in a recent influential paper, Tenreyro &amp; Thwaites (2016) find an opposite result**
+
+- **This is consistent with the majority of the literature studying the asymmetric effects of monetary policy shocks in Western economies**
+
+--
+
+- China has become the second largest economic engine in the world measured by nominal GDP; however, there has been relatively little work done on understanding the effects of Chinese monetary policy
+
+--
+
+- In other countries, substantial attention has been paid to state-dependence, or asymmetry, in the effects of policy over the business cycle
+  - Thoma (1994), Garcia &amp; Schaller (2002), Lo &amp; Piger (2005), Weise (1999), Kaufmann (2002), Peersman &amp; Smets (2001)
+  - Tenreyro &amp; Thwaites (2016)
+  
+--
+
+- I find evidence that monetary policy shocks have larger impacts on output growth in low-growth states, and that monetary policy shocks have larger effects on inflation in high-growth states
+
+--
+
+- My paper is the first to study asymmetric effects of monetary policy on the Chinese economy over the business cycle 
+
+---
+# Are the Effects of Monetary Policy Asymmetric in China?
+## Methodology
+
+???
+
+- **For the literature that focus on Western market economies, output is measured by industrial production and GDP volume**
+
+- **and data will speak in terms of the goodness of fit**
+
+--
+
+**Step #1: Extracting the Latent Dynamic Factor**
+
+- Motivation: 
+  - Output in China cannot be measured directly with industrial production or GDP, due to the poor quality of the officially published Chinese economic data (Rawski (2001), Maier (2011), Wallace (2014), Holz (2014))
+  - One of the method to evaluate Chinese economy when data is suspected to be inaccurate is to extract latent factors from a large panel of underlying time series (Mehrotra &amp; Paakkonen (2011), He, Leung, &amp; Chong (2013), Fernald, Spiegel, &amp; Swason (2014))
+
+--
+
+- Advantages: 
+  - Dynamic factors extracted from a large number of underlying variables convey more information regarding Chinese economic activity than the reported GDP data alone
+  - Need no prior knowledge to determine which variables to include in the model
+
+
+---
+# Are the Effects of Monetary Policy Asymmetric in China?
+## Methodology
+
+???
+
+- redistribute values for January and February so that the growth rate from December to January equals the growth rate from January to February.
+
+- Census X-12 ARIMA package
+
+- EM: initialize by filling in missing data for each series with unconditional
+mean; then I extract factors from the demeaned and standardized dataset; then I update missing values using factors, and repeat this procedure until factors converge
+
+- biweight kernel smoothes the series: remove the local weighted mean from each series
+
+--
+
+**Step #1: Extracting the Latent Dynamic Factor**
+
+- Data: downloaded from the CEIC China Premium Database
+  - 30 fundamental series that correlate with output 
+  - 4 price indexes
+
+--
+
+- Pre-processing: 
+  - removing effects of the Lunar New Year
+  - adjusting for seasonality 
+  - taking monthly growth rates of each series
+  - handling missing values and outliers by an iterative expectation-maximization algorithm
+  - standardizing 
+  - removing a local mean from each series using a biweight kernel
+
+---
+# Are the Effects of Monetary Policy Asymmetric in China?
+## Methodology
+
+???
+
+- **The left panel presents the economic activity factor**
+
+- **The right panel presents the inflation factor**
+
+- **The persistent decline in the both factors during the late 2008 is aligned with the U.S. Great recession and the global financial crisis**
+
+--
+
+**Step #1: Extracting the Latent Dynamic Factor**
+
+I measure factors `\(f_t\)` with the first principal component from a dynamic factor model:
+
+`$$X_t=\lambda(L) f_t+e_t$$`
+
+`$$f_t=\Psi(L) f_{t-1}+\eta_t$$`
+
+.pull-left[&lt;img src="Figs/Ch2/EC-new.png" width=700, height=250&gt;]
+
+.pull-right[&lt;img src="Figs/Ch2/PR-new.png" width=700, height=250&gt;]
+
+
+
+---
+# Are the Effects of Monetary Policy Asymmetric in China?
+## Methodology
+
+???
+
+- **Identification strategy: assuming the monetary policy variable responds to changes in the economic activity factor and inflation factor contemporaneously, but the economic activity factor and inflation factor responds to changes in monetary policy with lags**
+
+- **This is implemented by recursively ordering the economic activity factor and inflation factor first, and the policy variable last in the vector**
+
+- **Monetary policy shocks measured with the central bank benchmark interest rate are shown in Figure**
+
+--
+
+**Step #2: Measuring Monetary Policy Shocks**
+
+I Measure structural shocks of monetary policy from Choleski decomposition of residuals `\(\Sigma\)` from the following Factor Augmented Vector Autoregression (FAVAR) model: 
+
+.pull-left[
+`$$\begin{bmatrix} f_{t}^e \\ f_{t}^p \\ y_t \end{bmatrix} = A(L) \begin{bmatrix} f_{t-1}^e \\ f_{t-1}^p \\ y_{t-1} \end{bmatrix} + u_t$$`
+`$$u_t \stackrel{iid}{\sim} N(0, \Sigma)$$`
+]
+
+.pull-right[
+&lt;img src="Figs/Ch2/plot1-new.png" width="95%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+# Are the Effects of Monetary Policy Asymmetric in China?
+## Methodology
+
+???
+
+- `\(z_t\)`: measured with 6-month one-sided moving average of the standardized economic activity factor
+
+- `\(z_t\)`: from negative infinity to positive infinity 
+
+- `\(F(z_t)\)`: from 0 to 1 
+
+- `\(F(z_t)\)` increases as `\(z_t\)` increases
+
+- `\(c\)`: controls the proportion of the sample the economy spend in the “slow-growth” state
+
+- `\(\theta\)`: controls how sharply the economy switches from “high-growth” state to “low-growth” state
+
+- baseline specification: use T&amp;T values for `\(c\)` and `\(\theta\)` whiches matches NBER recession and expansion dates  
+
+- **The probability that the economy is in the “high-growth” state is shown in Figure**
+
+--
+
+**Step #3: Identifying High and Low Growth Phases**
+
+As in Tenreyro &amp; Thwaites (2016), I measure probabilities of the unobservable states of the economy `\(z_t\)` being in high-growth states using a smooth transition logistic function:
+
+.pull-left[
+`$$F(z_t)=\frac{exp(\theta \frac{z_t-c}{\sigma_z})}{1+exp(\theta \frac{z_t-c}{\sigma_z})}$$`
+]
+
+.pull-right[
+&lt;img src="Figs/Ch2/plot2-new.png" width="95%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+# Are the Effects of Monetary Policy Asymmetric in China?
+## Methodology
+
+???
+
+- it is easy to identify state-dependent asymmetry by allowing the coefficients on `\(u_t\)` to differ across two states, associated with the probability of being in a particular state
+
+- Hence, the impact of policy shocks on the economy in one state is separated from that in another state
+
+- Jorda (2005): local projections does not assume specific structure on specification and the unknown true multivariate dynamic system as required by a VAR model
+
+- the impulse response function is measured by extrapolating the one-period ahead forecast, while local projections measure the impulse response function with direct multi-step forecasting
+
+--
+
+**Step #4: Estimating Impulse Response Functions using Local Projections**
+
+- Following Tenreyro &amp; Thwaites (2016), the baseline model specifies the impulse response of the standardized economic activity factor at horizon `\(g\)` in state `\(j \in \{high, low\}\)` to a shock `\(u_t\)` as the coefficient `\(\beta^j_g\)`:
+
+`$$f_{t+g}^e=\tau t + F(z_t)(\alpha^h_g+\beta^h_g u_t+\gamma^h_{1,g} f_{t-1}^e + \gamma^h_{2,g} b_{t-1})$$`
+`$$+ (1-F(z_t))(\alpha^l_g+\beta^l_g u_t+\gamma^l_{3,g} f_{t-1}^e + \gamma^l_{4,g} b_{t-1}) + \nu_{t+g}$$`
+- Same specification for the standardized inflation factor:
+
+`$$f_{t+g}^p=\tau t + F(z_t)(\alpha^h_g+\beta^h_g u_t+\gamma^h_{1,g} f_{t-1}^p + \gamma^h_{2,g} b_{t-1})$$` 
+`$$+ (1-F(z_t))(\alpha^l_g+\beta^l_g u_t+\gamma^l_{3,g} f_{t-1}^p + \gamma^l_{4,g} b_{t-1}) + \nu_{t+g}$$`
+
+---
+# Are the Effects of Monetary Policy Asymmetric in China?
+## Methodology
+
+???
+
+- Following Jorda (2005), I construct standard errors for each local projection regression using Newey-West standard errors
+
+- Newye-West: `\(v_{t+g}\)` disturbance term in the local projection regression has a moving average structure, so they are serially correlated in the local projection method 
+
+- In `\(f_{t+g} \sim u_t\)`, error is `\(v_{t+1}, v_{t+2},...v_{t+g}\)`; In `\(f_{t+g+1} \sim u_{t+1}\)`, error is `\(v_{t+2}, v_{t+3},...v_{t+g+1}\)`; error terms overlapping 
+
+- Responses of economic activity during high-growth states and low-growth states are negative for the initial two months. Starting from the third month, responses of economic activity during high-growth states become positive and fluctuate around zero for the rest of the horizon, while responses of economic activity during low-growth states are negative for seven consecutive months. 
+
+- The evidence shows that monetary policy is more powerful in impacting economic activity during low-growth states
+
+- Starting from the third month, responses of the inflation factor during high-growth states becomes negative and remains so for 13 months. Responses of the inflation factor during low-growth states fluctuate around zero for the rest of the horizon. 
+
+- This evidence shows that monetary policy is more powerful in impacting inflation during high-growth states
+
+--
+
+**Step #4: Estimating Impulse Response Functions using Local Projections**
+
+- Following Tenreyro &amp; Thwaites (2016), I measure the response at period `\(g\)` by regressing dependent variables over period `\(g+1, g+2, ..., T\)` on independent
+variables over period `\(1, 2, ..., T-g\)` 
+
+- Monetary policy shocks having larger impacts on output growth during low-growth states and have larger impacts on inflation during high-growth states
+
+.pull-left[&lt;img src="Figs/Ch2/plot5-new.png" width=700, height=250&gt;]
+
+.pull-right[&lt;img src="Figs/Ch2/plot9-new.png" width=700, height=250&gt;]
+
+
+
+&lt;!---
+- There is substantial uncertainty in the impulse response function estimates. This is not surprising, as impulse response function estimates are often imprecise, and this is compounded by the short time series and noisy nature of the Chinese data.
+
+- However, despite this uncertainty, there are a number of horizons for which these impulse response function estimates are significantly different from zero, suggesting that monetary policy has statistically significant effects on the Chinese economy. Note that the response functions are for growth rates of the factor, so that a single significant growth rate response means that there is a significant level response.
+
+- This result is consistent with a convex aggregate supply curve
+
+&lt;img src="Figs/Ch2/Convex.png" width="60%" style="display: block; margin: auto;" /&gt;
+---&gt;
+
+
+---
+# Are the Effects of Monetary Policy Asymmetric in China?
+## Future Directions
+
+**Price factors**: 
+- This chapter has only included CPI series into the inflation factor
+- I plan to incorporate more prices indicators, such as PPI and house price
+
+--
+
+**Policy variable**: 
+- This chapter has used M2 growth rate as the monetary policy instrument. After the financial crisis in 2008, People’s Bank of China started to change its policy framework from the benchmark interest rate to the inflation-targeting interest rate
+- I plan to measure the monetary policy shock following Chen, Higgins, Waggoner &amp; Zha (2016)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
