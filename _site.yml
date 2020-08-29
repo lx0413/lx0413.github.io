@@ -11,6 +11,8 @@ navbar:
       href: teaching.html
     - text: "CV"
       href: CV.html
+    - text: "R scripts"
+      href: R.html
   right:
     - icon: fa-envelope fa-lg
       href: mailto:xli4@uoregon.edu
