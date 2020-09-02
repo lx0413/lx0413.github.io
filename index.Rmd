@@ -5,7 +5,7 @@ subtitle: Ph.D. Candidate in Economics, University of Oregon
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-Welcome! I am a fifth-year Ph.D. candidate in the [Department of Economics](https://economics.uoregon.edu/) at the [University of Oregon](https://www.uoregon.edu/). I received a M.S. in Policy Economics at the University of Illinois at Urbana Champaign in 2014. 
+Welcome! I am a fifth-year Ph.D. candidate in the [Department of Economics](https://economics.uoregon.edu/) at the [University of Oregon](https://www.uoregon.edu/). I received an M.S. in Policy Economics at the University of Illinois at Urbana Champaign in 2014. 
 
 [Nowcasting](https://www.newyorkfed.org/research/policy/nowcast) is the prediction of the present state of the economy with real-time data. My [current research](https://lx0413.github.io/research.html) focuses on nowcasting U.S. recessions using a novel high-frequency news-based sentiment index and mixed-frequency macroeconomic data. I also study the asymmetrical effects of monetary policy. Outside of economics, I enjoy swimming and weight training. 
 
@@ -18,7 +18,7 @@ I am participating in the 2020-2021 job market! I am available for interviews on
 
 **Fields of Expertise**: 
 
-Applied macroeconomics, time-series econometrics, forecasting, nowcasting, and textual analysis
+Applied macroeconomics, applied econometrics, time-series econometrics, forecasting, nowcasting, and textual analysis
 
 **Dissertation Committee**:
 
