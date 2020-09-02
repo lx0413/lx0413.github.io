@@ -3,7 +3,7 @@ output:
   pdf_document:
     latex_engine: pdflatex
     #template: /Users/lixiang/Desktop/resume/svm-latex-cv.tex
-geometry: left=.7in, top=.8in, right=.8in, bottom=.7in
+geometry: left=1in, top=1in, right=1in, bottom=1in
 
 # title: "resume"
 title: \textbf{Xiang "Ivy" LI}
@@ -51,25 +51,42 @@ Department of Economics  \hfill +1 (217) 904-0644
 # RESEARCH
 **Nowcasting Business Phases with High and Mixed Frequency Data** (Work in progress)
 
-- Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly and daily frequencies.
-- Measured the economic activity at daily intervals using dynamic factor models, and measured the probability of expansions and recessions in real time. 
-- This work elucidated that the use of higher frequency data significantly improves the speed at which expansions and recessions can be identified in U.S. since 1980.
+- Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly and daily frequencies from April 1962 to May 2020.
+- Modeled the economic activity at daily intervals using using a mixed-frequency dynamic factor model and extracted the optimal latent economic activity factor with the Kalman filter and smoother. 
+- Measured the probability of recessions in real-time using a variety of supervised machine learning classifiers. 
+- Proposed a procedure to convert probabilities of recessions into a binary variable that defines whether the economy is in an expansion or a recession regime on a daily basis.
+- This work elucidated that the use of higher frequency data significantly improves the speed at which expansions and recessions can be identified in U.S. since 1980. As a representative example, during the Covid-19 pandemic, the NBER announced on June 8, 2020, that a new recession started in the U.S. in March 2020, my model identified the start of this recession on March 15, 2020, 85 days ahead of the NBER announcement.
+
+<!-- - Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly and daily frequencies. -->
+<!-- - Measured the economic activity at daily intervals using dynamic factor models, and measured the probability of expansions and recessions in real time.  -->
+<!-- - This work elucidated that the use of higher frequency data significantly improves the speed at which expansions and recessions can be identified in U.S. since 1980. -->
 
 <!--- I take a three-step approach. First, I use the mixed frequency dynamic factor model to extract a coincident index of real economic activity using daily, weekly, monthly and quarterly data. Second, I train a variety of supervised machine learning classification techniques to classify the coincident index into recession and expansion regimes. Finally, I use these trained classifiers to evaluate the evidence for new business cycle turning points in end-of-sample data that has not yet been classified by the NBER. --->
 
 **A New High Frequency, News Based, Indicator of Macroeconomic Activity** (Work in progress)
 
-- Developed a weekly News-Based Sentiment Index (NBSI) regarding economic conditions based on articles sourced from The Wall Street Journal using dictionary methods.
-- Assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures. 
-- Estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real time. 
+- Collected a large sample of lead paragraphs of 410,601 articles published in The Wall Street Journal and The Wall Street Journal Online in the United States from April 2, 1991, to April 30, 2020, that have subjects related to economic activity.
+- Proposed a procedure to pre-process the raw text as a manageable high-dimensional numerical array, including tokenization, removing stopwords, stemming, and reversing negation words. 
+- Applied dictionary methods to develop a weekly and monthly News-Based Sentiment Index (NBSI) regarding economic conditions.
+- Assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures and estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real time. 
+
+
+<!-- - Developed a weekly News-Based Sentiment Index (NBSI) regarding economic conditions based on articles sourced from The Wall Street Journal using dictionary methods. -->
+<!-- - Assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures.  -->
+<!-- - Estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real time.  -->
 
 **Is the Response of Economic Output to Monetary Policy Asymmetric in China?** (Working paper)
 
-- Estimated monetary policy shocks in China, using a combination of dynamic factors models and factor-augmented vector autoregression.
-- Applying local projection methods, I determined that the monetary policy shock has larger impacts on output growth during low-growth states and that monetary policy shock has larger impacts on aggregate price during high-growth states.
+<!-- - Estimated monetary policy shocks in China, using a combination of dynamic factors models and factor-augmented vector autoregression. -->
+<!-- - Applying local projection methods, I determined that the monetary policy shock has larger impacts on output growth during low-growth states and that monetary policy shock has larger impacts on aggregate price during high-growth states. -->
 
 <!--- I take a four-step approach. First, Chinese economic activity and aggregate price level are measured using dynamic factors models. Second, monetary policy shocks are identified with Choleski residuals from a factor-augmented vector autoregression. Third, high-growth vs. low-growth phases are measured using a smooth transition logistic function. Lastly, the response of economic activity and price to monetary policy shocks in high-growth periods vs. low-growth periods are estimated via the local projection method--->
 
+- Collected and pre-processed fundamental series that correlate with output and price in China  
+- Extracted the latent economic activity factor and inflation factor from underlying variables with the first principal component using a dynamic factor model. 
+- Estimated  structural shocks of monetary policy from Choleski decomposition of residuals from a Factor Augmented Vector Autoregression model. 
+- Measured probabilities of the unobservable states of the economy being in high-growth & low-growth states using a smooth transition logistic function 
+- Estimating impulse response functions of the economic activity factor and inflation factor using local projections methods, I determined that the monetary policy shock has larger impacts on output growth during low-growth states and that monetary policy shock has larger impacts on aggregate price during high-growth states.
 
 <!---
 - This paper is the first to study asymmetry in the response of monetary policy on the Chinese economy over the business cycle. Asymmetry is defined in terms of the effects of monetary policy in high-growth periods vs. low-growth periods. High-growth and low-growth phases are measured using a smooth transition logistic function. Using local projection method, I find evidence that monetary policy shocks have larger impacts on output growth during low-growth states; during high-growth states, monetary policy shocks have larger impacts on inflation. This evidence is consistent with a convex aggregate supply curve
@@ -92,7 +109,6 @@ Department of Economics  \hfill +1 (217) 904-0644
 
 **Note**: the recent revisions of projects can be found on my website, https://lx0413.github.io/research.html
 
-\newpage
 
 # TEACHING EXPERIENCE
 **Sole Instructor**, University of Oregon
@@ -152,7 +168,7 @@ Department of Economics  \hfill +1 (217) 904-0644
 - Worked with the Peoples’ Bank of China to establish a credit reference platform for factoring companies--->
 
 # TECHNICAL SKILLS
-- Programs: R, MATLAB, Python, Git
+- Programs: R, R Markdown, MATLAB, Python, Git, SQL
 - Languages: Mandarin, English 
 
 # PROFESSIONAL REFERENCES
