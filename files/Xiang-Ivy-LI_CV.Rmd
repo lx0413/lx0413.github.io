@@ -122,9 +122,9 @@ Department of Economics  \hfill +1 (217) 904-0644
     
 **Teaching Assistant**, University of Oregon 
 
-- EC 320 Introduction to Econometrics: Spring 2019 (enrolled: 16, 31)
+- EC 320 Introduction to Econometrics: Spring 2019 (enrolled: 16, 31), Fall 2020 (enrolled: 8)
 - EC 202 Intro to Macroeconomic Analysis: Spring 2017 (enrolled: 31, 45, 45, 45), Winter 2018 (enrolled: 33, 46, 48, 48)
-  - Taught students how to use Stata to analyze data and identify causal relationships. 
+  - Taught students how to use [Stata](https://www.stata.com/), [R](https://www.r-project.org/about.html) and [Rstudio](https://rstudio.com/) to analyze data and identify causal relationships. 
   - Led lab discussion and organized group activities.
   
 **Note**: student experience survey, instructional quality ratings, student comments, and course materials written by R Markdown can be found on my website, https://lx0413.github.io/teaching.html
@@ -141,8 +141,8 @@ Department of Economics  \hfill +1 (217) 904-0644
 - Research Assistant to Hong Li, Peking University \hfill _2013_
 - Meritorious Winner, Interdisciplinary Contest in Modeling, Consortium for Mathematics and Its Applications \hfill _2012_
 - University Scholarship, University of International Business and Economics \hfill _2009 - 2010_
-- 1st prize, China National English Contest for College Students \hfill _2011_
-- 3rd prize, China National English Speaking Competition \hfill _2011_
+<!-- - 1st prize, China National English Contest for College Students \hfill _2011_ -->
+<!-- - 3rd prize, China National English Speaking Competition \hfill _2011_ -->
 
 <!--- - Simulated a dataset with 7000 observations and 131 variables according to the statistics of each variable
 - Reviewed R code for a project that uses random forest and causal forest methods to explore treatment heterogeneity effects of summer jobs on youth behavioral changes --->
@@ -178,8 +178,8 @@ University of Oregon \hspace{2in}  University of Oregon \newline
 (541) 346-6075 \hspace{2.4in}  (541) 346-4662 \newline
 \href{mailto:jpiger@uoregon.edu}{\texttt{jpiger@uoregon.edu}} \hspace{2in}  \href{mailto:gevans@uoregon.edu}{\texttt{gevans@uoregon.edu}}
 
-**David Evans** \hspace{2.5in} **Thien Huu Nguyen** \newline
-Assistant Professor of Economics \hspace{1.25in} Assistant Professor of Computer Science  \newline 
-University of Oregon \hspace{2in} University of Oregon \newline
-(541) 346-3431 \hspace{2.4in}  (541) 346-1398 \newline \href{mailto:thien@cs.uoregon.edu}{\texttt{thien@cs.uoregon.edu}} \hspace{1.8in}
-\href{mailto:devans@uoregon.edu}{\texttt{devans@uoregon.edu}} 
+**David Evans** \newline
+Assistant Professor of Economics  \newline 
+University of Oregon  \newline
+(541) 346-3431 \newline 
+\href{mailto:devans@uoregon.edu}{\texttt{devans@uoregon.edu}}

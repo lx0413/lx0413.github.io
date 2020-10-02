@@ -41,9 +41,9 @@ As a lead instructor at the University of Oregon, I work closely with students t
 
 ### Courses as Lab Teaching Assistant
 
-Entering Fall 2020, I have assisted in teaching 2 undergraduate classes a total of 3 times. Enrollment ranges from small groups of 16 students to larger groups of 48 students. As lab teaching assistant, I taught students how to use Stata to analyze data and identify causal relationships. I also led discussion and organized group activities. 
+Entering Fall 2020, I have assisted in teaching 2 undergraduate classes a total of 3 times. Enrollment ranges from small groups of 16 students to larger groups of 48 students. As lab teaching assistant, I taught students how to use [Stata](https://www.stata.com/), [R](https://www.r-project.org/about.html) and [Rstudio](https://rstudio.com/) to analyze data and identify causal relationships. I also led discussion and organized group activities. 
 
-- EC 320: Introduction to Econometrics: Spring 2019
+- EC 320: Introduction to Econometrics: Spring 2019, Fall 2020
 
 - EC 202 : Intro to Economic Analysis: Macroeconomics: Spring 2017, Winter 2018
 
