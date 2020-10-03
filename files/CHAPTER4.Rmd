@@ -75,13 +75,14 @@ This paper makes contributions by demonstrating sentiment analysis that can be u
 
 # Methodology
 
-From the Factiva Database, I collect a large sample of lead paragraphs articles published in the United States from April 2, 1991 to April 30, 2020 that have the following subjects: 
+<!-- that have the following subjects:  -->
+<!-- - News about commodity, debt, bond, equity, money and currency markets. -->
+<!-- - Analysts' comments or recommendations about corporates and industries. -->
+<!-- - Economic performance or indicators, government finance, monetary policy, trade or external payments. -->
 
-- News about commodity, debt, bond, equity, money and currency markets.
-- Analysts' comments or recommendations about corporates and industries.
-- Economic performance or indicators, government finance, monetary policy, trade or external payments.
+I collect a large sample of lead paragraphs of economic news articles published in the United States from April 2, 1991 to April 30, 2020. The text is represented at each point in time. Table \@ref(tab:ch4-table-example) is an example of this sample. 
 
-The document downloaded from the database is a Rich Text Format (RTF) file, which contains indexes for custom search fields, such as indexes for column name (CLM), section name (SE), headline (HD), author's name (BY), word count, publication date (PD) and time (ED), source name (SN), lead paragraph (LP), langauge code (LA), subject code (NS), region code (RE), publisher name (PUB), accession number (AN). For the purpose of this topic, I only extract lead paragraphs and publication dates by detecting the presence of the pattern of the index in each piece of news articles. Then I match the lead paragraph with the publication date such that the text is represented at each point in time. Table \@ref(tab:ch4-table-example) is an example of this sample. 
+<!-- The document downloaded from the database is a Rich Text Format (RTF) file, which contains indexes for custom search fields, such as indexes for column name (CLM), section name (SE), headline (HD), author's name (BY), word count, publication date (PD) and time (ED), source name (SN), lead paragraph (LP), langauge code (LA), subject code (NS), region code (RE), publisher name (PUB), accession number (AN). For the purpose of this topic, I only extract lead paragraphs and publication dates by detecting the presence of the pattern of the index in each piece of news articles. Then I match the lead paragraph with the publication date such that  -->
 
 ```{r ch4-table-example, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 library(dplyr)

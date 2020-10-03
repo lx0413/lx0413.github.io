@@ -90,6 +90,19 @@ library(magick)
   - use NBSI to track a wide range of economic activity measures
   - estimate the contribution of NBSI to identify U.S. recessions in real time by incorporating NBSI in models developed in the previous chapter
 
+<!-- --- -->
+<!-- # A New High Frequency, News Based, Indicator of Macroeconomic Activity -->
+<!-- ## Methodology -->
+
+<!-- **Step #1: Data**  -->
+
+<!-- that have the following subjects:  -->
+
+<!-- - News about commodity, debt, bond, equity, money and currency markets -->
+
+<!-- - Analysts' comments or recommendations about corporates and industries -->
+
+<!-- - Economic performance or indicators, government finance, monetary policy, trade or external payments -->
 
 
 ---
@@ -98,22 +111,7 @@ library(magick)
 
 **Step #1: Data** 
 
-From Factiva Database, I collect a large sample of leading paragraphs of articles published at daily frequency from April 2, 1991 to April 30, 2020 that have the following subjects: 
-
-- News about commodity, debt, bond, equity, money and currency markets
-
-- Analysts' comments or recommendations about corporates and industries
-
-- Economic performance or indicators, government finance, monetary policy, trade or external payments
-
-
----
-# A New High Frequency, News Based, Indicator of Macroeconomic Activity
-## Methodology
-
-**Step #1: Data** 
-
-The leading paragraph is represented at each point in time. An example of this sample:
+I collect a large sample of leading paragraphs of economic news articles published at daily frequency from April 2, 1991 to April 30, 2020. The leading paragraph is represented at each point in time. An example of this sample:
 
 ```{r ch4-table-example, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
 library(dplyr)
