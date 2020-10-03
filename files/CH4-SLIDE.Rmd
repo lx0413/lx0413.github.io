@@ -98,7 +98,7 @@ library(magick)
 
 **Step #1: Data** 
 
-From Factiva Database, I collect a large sample of leading paragraphs of 410,601 articles published at daily frequency in the Wall Street Journal from April 2, 1991 to April 30, 2020 that have the following subjects: 
+From Factiva Database, I collect a large sample of leading paragraphs of articles published at daily frequency in the Wall Street Journal from April 2, 1991 to April 30, 2020 that have the following subjects: 
 
 - News about commodity, debt, bond, equity, money and currency markets
 
