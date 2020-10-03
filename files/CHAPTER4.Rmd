@@ -75,7 +75,7 @@ This paper makes contributions by demonstrating sentiment analysis that can be u
 
 # Methodology
 
-From the Factiva Database, I collect a large sample of lead paragraphs of 410,601 articles published in The Wall Street Journal and The Wall Street Journal Online in the United States from April 2, 1991 to April 30, 2020 that have the following subjects: 
+From the Factiva Database, I collect a large sample of lead paragraphs articles published in The Wall Street Journal and The Wall Street Journal Online in the United States from April 2, 1991 to April 30, 2020 that have the following subjects: 
 
 - News about commodity, debt, bond, equity, money and currency markets.
 - Analysts' comments or recommendations about corporates and industries.
