@@ -37,7 +37,7 @@ knitr::opts_chunk$set(echo = TRUE)
 _This animation shows the estimated economic activity factor on selected analysis dates from the January 6, 1979 through August 31, 2020. Shaded areas indicate U.S. recessions. The factor starts to drop at the beginning of recessions, suggesting that the extracted factor captures the the movement of economic activity correctly and quickly._
 
 
-_Click [here](files/JobMarketPaper_XiangLI.pdf) for the most recent version of this project (Oct 2020)_
+_Click [here](files/JMP.pdf) for the most recent version of this project (Oct 2020)_
 
 _Click [here](files/JMP_2020Oct.html) for presentation slides (Oct 2020)_
 
