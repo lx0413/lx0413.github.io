@@ -51,11 +51,16 @@ Department of Economics  \hfill +1 (217) 904-0644
 # RESEARCH
 **Nowcasting Business Phases with High and Mixed Frequency Data** (Work in progress)
 
-- Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly and daily frequencies from April 1962 to May 2020.
+- Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly and daily frequencies from April 1962 to August 2020.
 - Modeled the economic activity at daily intervals using using a mixed-frequency dynamic factor model and extracted the optimal latent economic activity factor with the Kalman filter and smoother. 
 - Measured the probability of recessions in real-time using a variety of supervised machine learning classifiers. 
 - Proposed a procedure to convert probabilities of recessions into a binary variable that defines whether the economy is in an expansion or a recession regime on a daily basis.
-- This work elucidated that the use of higher frequency data significantly improves the speed at which expansions and recessions can be identified in U.S. since 1980. As a representative example, during the Covid-19 pandemic, the NBER announced on June 8, 2020, that a new recession started in the U.S. in March 2020, my model identified the start of this recession on March 15, 2020, 85 days ahead of the NBER announcement.
+- This work elucidated that the use of higher frequency data, leading data and information from news articles significantly improves the speed at which expansions and recessions can be identified in U.S. since 1980. 
+
+<!-- As representative examples, with high frequency and leading data included into the analysis, the model identifies the start of the Great Recession 256 days ahead of the NBER announcement and many months ahead of the statistical procedures surveyed in Hamilton (2011). When I further incorporate information from the news-based sentiment index in Li (2020), I am able to identify the December 2007 business cycle peak even earlier, on December 2, 2007. During the Covid-19 pandemic, the NBER announced on June 8, 2020, that a new recession started in the U.S. in March 2020, my model identified the start of this recession on March 22, 2020, 78 days ahead of the NBER announcement. -->
+
+
+<!-- As a representative example, during the Covid-19 pandemic, the NBER announced on June 8, 2020, that a new recession started in the U.S. in March 2020, my model identified the start of this recession on March 15, 2020, 85 days ahead of the NBER announcement. -->
 
 <!-- - Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly and daily frequencies. -->
 <!-- - Measured the economic activity at daily intervals using dynamic factor models, and measured the probability of expansions and recessions in real time.  -->
@@ -68,7 +73,9 @@ Department of Economics  \hfill +1 (217) 904-0644
 - Collected a large sample of lead paragraphs of 410,601 articles published in The Wall Street Journal and The Wall Street Journal Online in the United States from April 2, 1991, to April 30, 2020, that have subjects related to economic activity.
 - Proposed a procedure to pre-process the raw text as a manageable high-dimensional numerical array, including tokenization, removing stopwords, stemming, and reversing negation words. 
 - Applied dictionary methods to develop a weekly and monthly News-Based Sentiment Index (NBSI) regarding economic conditions.
-- Assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures and estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real time. 
+- Assessed the validity of this developed NBSI by estimating the usefulness of NBSI in identifying U.S. expansions and recessions in real time. I am able to identify the December 2007 business cycle peak on December 2, 2007, 365 days ahead of the NBER announcement.
+
+<!-- - Assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures and estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real time.  -->
 
 
 <!-- - Developed a weekly News-Based Sentiment Index (NBSI) regarding economic conditions based on articles sourced from The Wall Street Journal using dictionary methods. -->
