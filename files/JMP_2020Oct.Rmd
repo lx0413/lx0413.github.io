@@ -111,7 +111,7 @@ library(scales)
   - The plot shows the first and the last analysis date, as well as some analysis dates in between. 
   
 ```{r , echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
-knitr::include_graphics(c("/Users/lixiang/Desktop/Mixed-frequency/JMP/Figs/Ch3/Timeline2.png"))
+knitr::include_graphics(c("Figs/JMP/Timeline2.png"))
 ```
 
 
@@ -163,7 +163,7 @@ kable(timeline_table1, booktabs = T) %>%
 - **Vintage data** enables researchers to reproduce research and build more accurate forecasting models using the data available at the time.
 
 ```{r , echo=FALSE, message=FALSE, warning=FALSE, results='asis', out.width = "90%"}
-knitr::include_graphics(c("/Users/lixiang/Desktop/Mixed-frequency/JMP/Figs/Ch3/Timeline.png"))
+knitr::include_graphics(c("Figs/JMP/Timeline.png"))
 ```
 
 
