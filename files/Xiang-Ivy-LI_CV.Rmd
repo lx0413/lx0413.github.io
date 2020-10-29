@@ -179,20 +179,20 @@ Department of Economics  \hfill +1 (217) 904-0644
 - Programs: R, R Markdown, MATLAB, Python, Git, SQL
 - Languages: Mandarin, English 
 
-# PROFESSIONAL REFERENCES
-**Jeremy Piger**   \newline
-Department Head, Professor of Economics  \newline
-University of Oregon  \newline
-(541) 346-6075  \newline
+<!-- # PROFESSIONAL REFERENCES -->
+<!-- **Jeremy Piger**   \newline -->
+<!-- Department Head, Professor of Economics  \newline -->
+<!-- University of Oregon  \newline -->
+<!-- (541) 346-6075  \newline -->
 
-**George Evans** \newline
-John B. Hamacher Professor of Economics \newline
-University of Oregon \newline
-(541) 346-4662 \newline
+<!-- **George Evans** \newline -->
+<!-- John B. Hamacher Professor of Economics \newline -->
+<!-- University of Oregon \newline -->
+<!-- (541) 346-4662 \newline -->
 
-**David Evans**  \newline
-Assistant Professor of Economics   \newline 
-University of Oregon  \newline
-(541) 346-3431  \newline 
+<!-- **David Evans**  \newline -->
+<!-- Assistant Professor of Economics   \newline  -->
+<!-- University of Oregon  \newline -->
+<!-- (541) 346-3431  \newline  -->
 
-Please contact Sharon Kaplan \href{mailto:gradcoordes@uoregon.edu}{\texttt{gradcoordes@uoregon.edu}} to request reference letters.
+<!-- Please contact Sharon Kaplan \href{mailto:gradcoordes@uoregon.edu}{\texttt{gradcoordes@uoregon.edu}} to request reference letters. -->
