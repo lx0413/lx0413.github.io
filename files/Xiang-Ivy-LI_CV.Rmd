@@ -26,8 +26,9 @@ urlcolor: blue
 
 ---
 Department of Economics  \hfill +1 (217) 904-0644
-\newline University of Oregon \hfill xli4@uoregon.edu
-\newline Eugene, OR 97403 \hfill http://lx0413.github.io
+\newline 736 Prince Lucien Campbell Hall \hfill xli4@uoregon.edu
+\newline 1285 University of Oregon \hfill lx0413@gmail.com
+\newline Eugene, OR 97403-1285 \hfill http://lx0413.github.io
 
 \rule[2ex]{\textwidth}{1pt}
 
@@ -39,7 +40,7 @@ Department of Economics  \hfill +1 (217) 904-0644
 **Ph.D.**, Economics, University of Oregon, OR, USA \hfill _2021 (expected)_
 
 - Dissertation: Essays On High Frequency Macroeconomic Monitoring
-- Committee: Jeremy Piger (Chair), George Evans, David Evans, Thien H. Nguyen (Computer Science)
+- Dissertation Committee: Jeremy Piger (Chair), George Evans, David Evans, Thien H. Nguyen (Computer Science)
 - Fields of Expertise: applied macroeconomics, time-series econometrics, forecasting, textual analysis
 
 **M.S.**, Policy Economics, University of Illinois at Urbana Champaign, IL, USA \hfill _2015_
@@ -53,9 +54,9 @@ Department of Economics  \hfill +1 (217) 904-0644
 
 - Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly and daily frequencies from April 1962 to August 2020.
 - Modeled the economic activity at daily intervals using using a mixed-frequency dynamic factor model and extracted the optimal latent economic activity factor with the Kalman filter and smoother. 
-- Measured the probability of recessions in real-time using a variety of supervised machine learning classifiers. 
-- Proposed a procedure to convert probabilities of recessions into a binary variable that defines whether the economy is in an expansion or a recession regime on a daily basis.
-- This work elucidated that the use of higher frequency data, leading data and information from news articles significantly improves the speed at which expansions and recessions can be identified in U.S. since 1980. 
+- Measured the probability of recessions in real-time using a supervised Markov regime-switching classifier. 
+- Proposed a procedure to convert probabilities of recessions into a binary variable that defines the expansion or recession regime on a daily basis.
+- This work elucidated that the use of high-frequency data and leading data significantly improves the speed at which expansions and recessions can be identified in U.S. since 1980. 
 
 <!-- As representative examples, with high frequency and leading data included into the analysis, the model identifies the start of the Great Recession 256 days ahead of the NBER announcement and many months ahead of the statistical procedures surveyed in Hamilton (2011). When I further incorporate information from the news-based sentiment index in Li (2020), I am able to identify the December 2007 business cycle peak even earlier, on December 2, 2007. During the Covid-19 pandemic, the NBER announced on June 8, 2020, that a new recession started in the U.S. in March 2020, my model identified the start of this recession on March 22, 2020, 78 days ahead of the NBER announcement. -->
 
@@ -70,10 +71,10 @@ Department of Economics  \hfill +1 (217) 904-0644
 
 **A New High Frequency, News Based, Indicator of Macroeconomic Activity** (Work in progress)
 
-- Collected a large sample of lead paragraphs of 410,601 articles published in The Wall Street Journal and The Wall Street Journal Online in the United States from April 2, 1991, to April 30, 2020, that have subjects related to economic activity.
+- Collected a large sample of 410,601 news articles published from April 2, 1991, to April 30, 2020 that have subjects related to economic activity in the United States.
 - Proposed a procedure to pre-process the raw text as a manageable high-dimensional numerical array, including tokenization, removing stopwords, stemming, and reversing negation words. 
-- Applied dictionary methods to develop a weekly and monthly News-Based Sentiment Index (NBSI) regarding economic conditions.
-- Assessed the validity of this developed NBSI by estimating the usefulness of NBSI in identifying U.S. expansions and recessions in real time. I am able to identify the December 2007 business cycle peak on December 2, 2007, 365 days ahead of the NBER announcement.
+- Applied dictionary methods to develop a weekly and monthly News-Based Sentiment Index (NBSI) to proxy for aggregate economic conditions.
+- Assessed the validity of this developed NBSI by estimating the usefulness of NBSI in identifying U.S. expansions and recessions in real time. Nowcasting model that incorporates information from news is able to identify the December 2007 business cycle peak on December 2, 2007, 365 days ahead of the announcement made by the National Bureau of Economic Research.
 
 <!-- - Assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures and estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real time.  -->
 
@@ -179,14 +180,19 @@ Department of Economics  \hfill +1 (217) 904-0644
 - Languages: Mandarin, English 
 
 # PROFESSIONAL REFERENCES
-**Jeremy Piger** (Chair) \hspace{2in} **George Evans** \newline
-Department Head, Professor of Economics \hspace{0.65in}  John B. Hamacher Professor of Economics \newline
-University of Oregon \hspace{2in}  University of Oregon \newline
-(541) 346-6075 \hspace{2.4in}  (541) 346-4662 \newline
-\href{mailto:jpiger@uoregon.edu}{\texttt{jpiger@uoregon.edu}} \hspace{2in}  \href{mailto:gevans@uoregon.edu}{\texttt{gevans@uoregon.edu}}
-
-**David Evans** \newline
-Assistant Professor of Economics  \newline 
+**Jeremy Piger**   \newline
+Department Head, Professor of Economics  \newline
 University of Oregon  \newline
-(541) 346-3431 \newline 
-\href{mailto:devans@uoregon.edu}{\texttt{devans@uoregon.edu}}
+(541) 346-6075  \newline
+
+**George Evans** \newline
+John B. Hamacher Professor of Economics \newline
+University of Oregon \newline
+(541) 346-4662 \newline
+
+**David Evans**  \newline
+Assistant Professor of Economics   \newline 
+University of Oregon  \newline
+(541) 346-3431  \newline 
+
+Please contact Sharon Kaplan \href{mailto:gradcoordes@uoregon.edu}{\texttt{gradcoordes@uoregon.edu}} to request reference letters.
