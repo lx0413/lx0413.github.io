@@ -128,17 +128,29 @@ legend("bottomright", legend = "% of responses", bty = "n",  pch=20, col=rgb(0.2
 
 ### Student Comments
 
-_"Worked hard to make sure students understood the material. Made it evident that she cares and wants students to be successful. Was very reachable outside of the classroom. ... Powerpoints were put together well. In-class problems correlated well with exam materials. Quizzes were good indicators of how well students know the chapter." -- Taylor Athan_
+_"Worked hard to make sure students understood the material. Made it evident that she cares and wants students to be successful. Was very reachable outside of the classroom. ... Powerpoints were put together well. In-class problems correlated well with exam materials. Quizzes were good indicators of how well students know the chapter."_
 
-_"Honestly, this instructor is one of my favorite instructor so far. She's so kind and when we have a quiz to midterm, she told us lots of details that we should focus on. Her class is interesting and I really like it." -- Pengfei Qin_
+<!-- -- Taylor Athan_ -->
 
-_"Xiang does a great job helping students understand course material. She also shares cool information that helps students learn more about the topic, such as interesting economics podcasts. ... I think the course was really well organized. It was very helpful to have weekly practice problems which kind of served as optional homework, to help students practice course material. That helped me a lot with remembering things learned." -- Marie Rose Tonguino_
+_"Honestly, this instructor is one of my favorite instructor so far. She's so kind and when we have a quiz to midterm, she told us lots of details that we should focus on. Her class is interesting and I really like it."_
 
-_"The course itself is structured well. Xiang provided us with many practice problems which helped with mastering the course material. ... Xiang is a great professor who is very organized and utilizes class time well." -- Ashvin Ashoke_
+<!-- -- Pengfei Qin_ -->
 
-_"Xiang did a great job of being clear about what was required for this course. Her lectures were informative." -- Tyler Hanson_
+_"Xiang does a great job helping students understand course material. She also shares cool information that helps students learn more about the topic, such as interesting economics podcasts. ... I think the course was really well organized. It was very helpful to have weekly practice problems which kind of served as optional homework, to help students practice course material. That helped me a lot with remembering things learned."_
 
-_"Professor Li was very good at getting through a lot of material in each class period." -- Sean Vermilya_
+<!-- -- Marie Rose Tonguino_ -->
+
+_"The course itself is structured well. Xiang provided us with many practice problems which helped with mastering the course material. ... Xiang is a great professor who is very organized and utilizes class time well."_
+
+<!-- -- Ashvin Ashoke_ -->
+
+_"Xiang did a great job of being clear about what was required for this course. Her lectures were informative."_
+
+<!-- -- Tyler Hanson_ -->
+
+_"Professor Li was very good at getting through a lot of material in each class period."_ 
+
+<!-- -- Sean Vermilya_ -->
 
 _Instructor was helpful in clarifying course material (during office hours) on various occasions. She was accessible, approachable, and seemed passionate about her students' success._
 
