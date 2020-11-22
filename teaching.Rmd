@@ -15,12 +15,12 @@ library(viridis)
 <div style="margin-bottom:50px;">
 </div>
 
-### Teaching Philosophy
+<!-- ### Teaching Philosophy -->
 
-As an educator in economics, I aim to create an inclusive environment where students are able to apply quantitative & graphical skills, economic intuition, and economic theory to understand the evolving real-world issues, news, and events. I pride myself in helping students with developing economic tools to problem solve and being available to assist students outside of class whenever the need arises. 
+<!-- As an educator in economics, I aim to create an inclusive environment where students are able to apply quantitative & graphical skills, economic intuition, and economic theory to understand the evolving real-world issues, news, and events. I pride myself in helping students with developing economic tools to problem solve and being available to assist students outside of class whenever the need arises.  -->
 
-<div style="margin-bottom:50px;">
-</div>
+<!-- <div style="margin-bottom:50px;"> -->
+<!-- </div> -->
 
 ### Courses as Sole Instructor
 
