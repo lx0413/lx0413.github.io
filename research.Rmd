@@ -29,7 +29,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <br>
 
 <center>
-<img src="images/animation1.gif" style="width:50%; border:3px solid; margin-right: 40px" align="center">
+<img src="images/animation1.gif" style="width:55%; border:3px solid; margin-right: 40px" align="center">
 </center>
 
 <br>
@@ -38,7 +38,7 @@ _This animation shows the estimated economic activity factor on selected analysi
 
 
 <center>
-<img src="images/BC6.png" style="width:50%; border:3px solid; margin-right: 40px" align="center">
+<img src="images/BC6.png" style="width:75%; border:3px solid; margin-right: 40px" align="center">
 </center>
 
 <br>
@@ -81,7 +81,7 @@ _This figure shows the movement between the monthly NBSI and monthly macroeconom
 <br>
 
 <center>
-<img src="images/wordcloud.gif" style="width:50%; border:3px solid; margin-right: 40px" align="center">
+<img src="images/wordcloud.gif" style="width:55%; border:3px solid; margin-right: 40px" align="center">
 </center>
 
 <br>
