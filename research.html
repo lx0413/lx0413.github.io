@@ -336,13 +336,13 @@ $(document).ready(function () {
 <h3>Nowcasting Business Cycle Phases with High-Frequency Data (Job Market Paper)</h3>
 <p><strong>Motivation:</strong> Real-time tracking of the present state of macroeconomic activity, particularly for tracking recessions, is of great interest to firms, workers, financial market participants, and policymakers. Despite significant research focus on forecasting and nowcasting macroeconomic activity, there are still substantial delays in identifying key macroeconomic fluctuations. For example, the 2007-2009 Great Recession was not identified until mid-to-late 2008 by statistical tracking models in real-time, and the National Bureau of Economic Research (NBER) did not announce this recession until December 1, 2008. In this paper, I develop novel datasets and evaluate techniques for improved high-frequency monitoring of the macroeconomy.</p>
 <p><strong>Method</strong>: I developed a novel real-time dataset of macroeconomic data at quarterly, monthly, weekly, and daily frequencies from April 1962 to August 2020. I modeled and extracted the latent economic activity factor at daily intervals using a mixed-frequency dynamic factor model with a Kalman filter. I measured the probability of recessions in real time using a supervised Markov regime-switching classifier and a Hamilton filter. I then proposed a dating procedure to convert probabilities of recessions into a binary variable that defines whether the economy is in an expansion or a recession regime on a daily basis.</p>
-<p><strong>Results</strong>: the use of higher-frequency data, leading data, and information from economic news articles significantly and consistently improves the speed at which expansions and recessions can be identified in the United States since 1980. As representative examples, with high-frequency and leading data included into the analysis, my model identifies the 2007-2009 Great Recession on March 30, 2008, 246 days ahead of the NBER announcement and many months ahead of the statistical procedures surveyed in Hamilton (2011). When I further incorporate a news-based sentiment index developed in another of my project, Li (2020), my model identifies the Great Recession even earlier, on December 2, 2007. During the Covid-19 pandemic, the NBER announced on June 8, 2020 that a new recession has started in the United States since March 2020; however, my model identified this recession on March 22, 2020, 78 days ahead of the NBER announcement.</p>
+<p><strong>Result</strong>: the use of higher-frequency data, leading data, and information from economic news articles significantly and consistently improves the speed at which expansions and recessions can be identified in the United States since 1980. As representative examples, with high-frequency and leading data included into the analysis, my model identifies the 2007-2009 Great Recession on March 30, 2008, 246 days ahead of the NBER announcement and many months ahead of the statistical procedures surveyed in Hamilton (2011). When I further incorporate a news-based sentiment index developed in another of my project, Li (2020), my model identifies the Great Recession even earlier, on December 2, 2007. During the Covid-19 pandemic, the NBER announced on June 8, 2020 that a new recession has started in the United States since March 2020; however, my model identified this recession on March 22, 2020, 78 days ahead of the NBER announcement.</p>
 <!-- In several cases, business cycle turning points are called prior to -->
 <!-- their occurring, which demonstrates the value-added of incorporating leading data into the analysis.  -->
 <!-- while the National Bureau of Economic Research (NBER) announced on December 1, 2008, that a new recession, "the Great Recession", started in January 2008, my model identified the start of this recession on December 23, 2007, 256 days ahead of the NBER announcement.   -->
 <p><br></p>
 <center>
-<img src="images/animation1.gif" style="width:55%; border:3px solid; margin-right: 40px" align="center">
+<img src="images/dynamic_factor_pseudo.gif" style="width:55%; border:3px solid; margin-right: 40px" align="center">
 </center>
 <p><br></p>
 <p><em>This animation shows the estimated economic activity factor on selected analysis dates from the January 6, 1979 through August 31, 2020. Shaded areas indicate U.S. recessions. The factor starts to drop at the beginning of recessions, suggesting that the extracted factor captures the the movement of economic activity correctly and quickly.</em></p>
@@ -351,8 +351,8 @@ $(document).ready(function () {
 </center>
 <p><br></p>
 <p><em>As a representative example, incorporating high-frequency and leading data produces a call of the December 2007 business cycle peak on March 30, 2008, which is 246 days ahead of the NBER announcement, and many months ahead of the statistical procedures surveyed in Hamilton (2011). Further incorporating information from the news allows the model to identify this peak even earlier, on December 2, 2007.</em></p>
-<p><em>Click <a href="files/Xiang-Ivy-Li_JobMarketPaper.pdf">here</a> for the most recent version of this project (Nov 2020)</em></p>
-<p><em>Click <a href="files/JMP_Nov2020.html">here</a> for presentation slides (Nov 2020)</em></p>
+<p><strong>Click <a href="files/Xiang-Ivy-Li_JobMarketPaper.pdf">here</a> for the most recent version of this project (Nov 2020)</strong></p>
+<p><strong>Click <a href="files/JMP_Nov2020.html">here</a> for presentation slides (Nov 2020)</strong></p>
 <div style="margin-bottom:50px;">
 
 </div>
@@ -366,18 +366,18 @@ $(document).ready(function () {
 <!-- I assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures, and estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real-time.  -->
 <p><br></p>
 <center>
-<img src="images/all_monthly.png" style="width:75%; border:3px solid; margin-right: 20px" align="center">
-</center>
-<p><br></p>
-<p><em>This figure shows the movement between the monthly NBSI and monthly macroeconomic variables from April 1991 to April 2020. Monthly macroeconomic variables used here include the unemployment rate, total nonfarm payroll employment, industrial production, real manufacturing and industries sales, and the University of Michigan consumer sentiment index. The figure suggests that NBSI correctly captures the movement in these economic activity variables.</em></p>
-<p><br></p>
-<center>
 <img src="images/wordcloud.gif" style="width:55%; border:3px solid; margin-right: 40px" align="center">
 </center>
 <p><br></p>
 <p><em>This animation shows the change of the most frequently used negative and positive words in news articles over years.</em></p>
-<p><em>Click <a href="files/CHAPTER4.pdf">here</a> for the most recent version of this project (August 2020)</em></p>
-<p><em>Click <a href="files/CH4-SLIDE.html">here</a> for presentation slides (May 2020)</em></p>
+<p><br></p>
+<center>
+<img src="images/all_monthly.png" style="width:75%; border:3px solid; margin-right: 20px" align="center">
+</center>
+<p><br></p>
+<p><em>This figure shows the movement between the monthly NBSI and monthly macroeconomic variables from April 1991 to April 2020. Monthly macroeconomic variables used here include the unemployment rate, total nonfarm payroll employment, industrial production, real manufacturing and industries sales, and the University of Michigan consumer sentiment index. The figure suggests that NBSI correctly captures the movement in these economic activity variables.</em></p>
+<p><strong>Click <a href="files/CHAPTER4.pdf">here</a> for the most recent version of this project (August 2020)</strong></p>
+<p><strong>Click <a href="files/CH4-SLIDE.html">here</a> for presentation slides (May 2020)</strong></p>
 <div style="margin-bottom:50px;">
 
 </div>
@@ -393,8 +393,8 @@ $(document).ready(function () {
 </center>
 <p><br></p>
 <p><em>The top figures in this panel present the economic activity factor and the inflation factor in China. The persistent decline in the economic activity growth and inflation during the late 2008 is aligned with the U.S. Great recession and the global financial crisis. The bottom figures in this panel present the impulse response function of the economic activity factor and inflation factor to a one percentage point increase in the identified monetary policy shock. The evidence shows that monetary policy is more powerful in impacting economic activity during low-growth states, and monetary policy is more powerful in impacting inflation during high-growth states.</em></p>
-<p><em>Click <a href="files/CHAPTER2.pdf">here</a> for the most recent version of this project (August 2020)</em></p>
-<p><em>Click <a href="files/CH2-SLIDE.html">here</a> for presentation slides (May 2020)</em></p>
+<p><strong>Click <a href="files/CHAPTER2.pdf">here</a> for the most recent version of this project (August 2020)</strong></p>
+<p><strong>Click <a href="files/CH2-SLIDE.html">here</a> for presentation slides (May 2020)</strong></p>
 </div>
 
 
