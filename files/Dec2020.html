@@ -58,7 +58,7 @@ name: Motivation
 ---
 # Introduction
 
-&lt;img src="/Users/lixiang/Desktop/Mixed-frequency/JMP/presentation/BC1.png" width="1679" /&gt;
+&lt;img src="BC1.png" width="1679" /&gt;
 
 
 ???
@@ -74,7 +74,7 @@ name: Motivation
 
 To identify a recession or an expansion **before** it occurs: to **forecast** business cycle phases
 
-&lt;img src="/Users/lixiang/Desktop/Mixed-frequency/JMP/presentation/BC2.png" width="90%" /&gt;
+&lt;img src="BC2.png" width="90%" /&gt;
 
 - Berge (2015), Chauvet &amp; Potter (2005), Kauppi &amp; Saikkonen (2008), Ng (2014), and Rudebusch &amp; Williams (2009)
 
@@ -90,7 +90,7 @@ A large literature has attempted to **forecast** recessions with only very limit
 
 To identify a recession or an expansion **after** it occurs: to **nowcast** business cycle phases
 
-&lt;img src="/Users/lixiang/Desktop/Mixed-frequency/JMP/presentation/BC3.png" width="90%" /&gt;
+&lt;img src="BC3.png" width="90%" /&gt;
 
 - Chauvet &amp; Piger (2008), Chauvet &amp; Hamilton (2006) 
 
@@ -110,7 +110,7 @@ Timely identification of expansions and recessions is of substantial interest to
 
 --
 
-&lt;img src="/Users/lixiang/Desktop/Mixed-frequency/JMP/presentation/BC4.png" width="90%" /&gt;
+&lt;img src="BC4.png" width="90%" /&gt;
   
 - The National Bureau of Economic Research (NBER) produces nowcasts of turning points &lt;span style="color: purple;"&gt;**long after the fact**&lt;/span&gt;.
 
@@ -133,7 +133,7 @@ Timely identification of expansions and recessions is of substantial interest to
 The existing literature is able to improve on the speed of detection of new turning points &lt;span style="color: purple;"&gt;**over the NBER**&lt;/span&gt;.
 
 
-&lt;img src="/Users/lixiang/Desktop/Mixed-frequency/JMP/presentation/BC5.png" width="90%" /&gt;
+&lt;img src="BC5.png" width="90%" /&gt;
 
 
 - But these models still identify turning points with &lt;span style="color: purple;"&gt;**a substantial lag time**&lt;/span&gt;.
@@ -229,7 +229,7 @@ _Step #3_: I propose &lt;span style="color: green;"&gt;**a business cycle phases
 
 Implementing these three additions - &lt;span style="color: green;"&gt;**high-frequency data, leading data, information from news articles**&lt;/span&gt;, significantly and consistently improves the speed at which expansions and recessions can be **nowcasted** in the United States since 1980.
 
-&lt;img src="/Users/lixiang/Desktop/Mixed-frequency/JMP/presentation/BC6.png" width="90%" /&gt;
+&lt;img src="BC6.png" width="90%" /&gt;
 
 
 ???
@@ -255,7 +255,7 @@ name: Motivation
 
 Every Sunday starting from Jan 1, 1979 to August 31, 2020 is defined as my **analysis date** to conduct nowcasting exercises.
 
-&lt;img src="/Users/lixiang/Desktop/Mixed-frequency/JMP/Figs/Ch3/Timeline2.png" width="3477" /&gt;
+&lt;img src="Timeline2.png" width="3477" /&gt;
 
 ???
 
@@ -607,7 +607,7 @@ dates to be known. The NBER turning point dates are therefore taken as given tha
  
 I train a supervised Markov regime-switching classifier using data in the time window where regimes are classified by the NBER. 
 
-&lt;img src="/Users/lixiang/Desktop/Mixed-frequency/JMP/Figs/Ch3/Timeline3.png" width="3125" /&gt;
+&lt;img src="Timeline3.png" width="3125" /&gt;
 
 - On **_each_ analysis date** `\(T\)`, I estimate parameters of the model using data up to `\(T-365\)` using non-parametric techniques
   - Estimating `\(\beta_0, \beta_1\)` as the mean of `\(\Delta\hat{x_t}\)` in each NBER regime
