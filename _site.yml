@@ -1,7 +1,7 @@
-name: "Xiang 'Ivy' Li"
+name: "Xiang LI"
 output_dir: "."
 navbar:
-  title: "Xiang 'Ivy' Li"
+  title: "Xiang LI"
   left:
     - text: "Home"
       href: index.html
