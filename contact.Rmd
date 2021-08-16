@@ -9,6 +9,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 I’d love to hear from you, so feel free to reach out:
 
-xli4@uoregon.edu
+xli4@butler.edu
 
 Or connect with me on GitHub, Twitter, or Linkedin (links in top right).
