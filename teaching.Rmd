@@ -22,30 +22,54 @@ library(viridis)
 <!-- <div style="margin-bottom:50px;"> -->
 <!-- </div> -->
 
-### Courses as Independent Instructor
+### Sole Instructor
 
-As a sole instructor at the University of Oregon, I work closely with students to help them achieve personal academic goals and organize graduate employee grading. Entering Spring 2021, I have been the sole instructor a total of 6 times in 2 distinct undergraduate-level courses, in person and online. I have taught classes with enrollment ranging from small groups of 20 students to large classes of 85 students. My course materials written in R markdown are shared in my Github repos, including syllabus, lecture slides, practice problems, and study guide. 
+As a sole instructor of economics courses, I work closely with students to help them achieve personal academic goals. I have taught classes with enrollment ranging from small groups of 8 students to large classes of 85 students. My course materials written in R markdown are shared in my Github repositories, including syllabus, lecture slides, practice problems, and study guide. 
 
-- EC370 Money and Banking: Summer 2018, Winter 2019, Fall 2019, Spring 2020 (remote), Spring 2021 (remote)
+<!-- and organize graduate employee grading.  -->
+<!-- Entering Spring 2023, I have been the sole instructor a total of 6 times in 3 distinct undergraduate-level courses, in person and online.  -->
 
-  - [Github repo](https://github.com/lx0413/EC370)
+#### Statistics (in R)
 
-- EC311 Intermediate Macroeconomic Theory: Summer 2019
+- at Lewis & Clark College: Fall 2023, Spring 2024
 
-  - [Github repo](https://github.com/lx0413/EC313)
+
+#### Money and Banking
+
+- at Lewis & Clark College: Fall 2023
+- at Butler University: Fall 2021, Spring 2022
+- at University of Oregon: Summer 2018, Winter 2019, Fall 2019, Spring 2020, Spring 2021
+  
+  <!-- - [Github repo](https://github.com/lx0413/EC370) -->
+
+#### Intermediate Macroeconomics 
+
+- at Lewis & Clark College: Fall 2023, Spring 2024
+- at Butler University: Spring 2022
+- at University of Oregon: Summer 2019
+
+  <!-- - [Github repo](https://github.com/lx0413/EC313) -->
 
 <div style="margin-bottom:50px;">
 </div>
 
 
 
-### Courses as Lab Teaching Assistant
+### Lab Teaching Assistant
 
-Entering Fall 2020, I have assisted in teaching 2 undergraduate-level classes a total of 4 times. Enrollment ranges from small groups of 7 students to larger groups of 48 students. As a lab teaching assistant, I teach students how to use [Stata](https://www.stata.com/), [R](https://www.r-project.org/about.html) and [Rstudio](https://rstudio.com/) to analyze data and identify causal relationships. I also lead discussion and organize group activities. 
+<!-- Entering Fall 2020,  -->
 
-- EC320 Introduction to Econometrics: Spring 2019, Fall 2020
+I have assisted in teaching 2 undergraduate-level classes a total of 4 times. Enrollment ranges from small groups of 7 students to larger groups of 48 students. As a lab teaching assistant, I teach students how to use [Stata](https://www.stata.com/), [R](https://www.r-project.org/about.html) and [Rstudio](https://rstudio.com/) to analyze data and identify causal relationships. I lead discussion and organize group activities. 
 
-- EC202 Intro to Economic Analysis: Macroeconomics: Spring 2017, Winter 2018
+
+
+#### Introduction to Econometrics
+
+- at University of Oregon: Spring 2019, Fall 2020
+
+#### Intro to Economic Analysis: Macroeconomics
+
+- at University of Oregon : Spring 2017, Winter 2018
 
 <div style="margin-bottom:50px;">
 </div>

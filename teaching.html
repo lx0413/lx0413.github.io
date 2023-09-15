@@ -11,26 +11,40 @@
 
 
 
-<title>Xiang LI: Teaching</title>
+<title>Teaching</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
@@ -79,10 +69,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -99,40 +85,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 64px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h2 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h3 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h4 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h5 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h6 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -160,7 +122,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -172,7 +134,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -182,11 +144,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -198,13 +177,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -212,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -265,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -317,11 +288,11 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
-<h1 class="title toc-ignore">Xiang LI: Teaching</h1>
+<h1 class="title toc-ignore">Teaching</h1>
 
 </div>
 
@@ -333,58 +304,129 @@ $(document).ready(function () {
 <!-- As an educator in economics, I aim to create an inclusive environment where students are able to apply quantitative & graphical skills, economic intuition, and economic theory to understand the evolving real-world issues, news, and events. I pride myself in helping students with developing economic tools to problem solve and being available to assist students outside of class whenever the need arises.  -->
 <!-- <div style="margin-bottom:50px;"> -->
 <!-- </div> -->
-<div id="courses-as-independent-instructor" class="section level3">
-<h3>Courses as Independent Instructor</h3>
-<p>As a sole instructor at the University of Oregon, I work closely with students to help them achieve personal academic goals and organize graduate employee grading. Entering Spring 2021, I have been the sole instructor a total of 6 times in 2 distinct undergraduate-level courses, in person and online. I have taught classes with enrollment ranging from small groups of 20 students to large classes of 85 students. My course materials written in R markdown are shared in my Github repos, including syllabus, lecture slides, practice problems, and study guide.</p>
+<div id="sole-instructor" class="section level3">
+<h3>Sole Instructor</h3>
+<p>As a sole instructor of economics courses, I work closely with
+students to help them achieve personal academic goals. I have taught
+classes with enrollment ranging from small groups of 8 students to large
+classes of 85 students. My course materials written in R markdown are
+shared in my Github repositories, including syllabus, lecture slides,
+practice problems, and study guide.</p>
+<!-- and organize graduate employee grading.  -->
+<!-- Entering Spring 2023, I have been the sole instructor a total of 6 times in 3 distinct undergraduate-level courses, in person and online.  -->
+<div id="statistics-in-r" class="section level4">
+<h4>Statistics (in R)</h4>
 <ul>
-<li><p>EC370 Money and Banking: Summer 2018, Winter 2019, Fall 2019, Spring 2020 (remote), Spring 2021 (remote)</p>
+<li>at Lewis &amp; Clark College: Fall 2023, Spring 2024</li>
+</ul>
+</div>
+<div id="money-and-banking" class="section level4">
+<h4>Money and Banking</h4>
 <ul>
-<li><a href="https://github.com/lx0413/EC370">Github repo</a></li>
-</ul></li>
-<li><p>EC311 Intermediate Macroeconomic Theory: Summer 2019</p>
+<li><p>at Lewis &amp; Clark College: Fall 2023</p></li>
+<li><p>at Butler University: Fall 2021, Spring 2022</p></li>
+<li><p>at University of Oregon: Summer 2018, Winter 2019, Fall 2019,
+Spring 2020, Spring 2021</p>
+<!-- - [Github repo](https://github.com/lx0413/EC370) --></li>
+</ul>
+</div>
+<div id="intermediate-macroeconomics" class="section level4">
+<h4>Intermediate Macroeconomics</h4>
 <ul>
-<li><a href="https://github.com/lx0413/EC313">Github repo</a></li>
-</ul></li>
+<li><p>at Lewis &amp; Clark College: Fall 2023, Spring 2024</p></li>
+<li><p>at Butler University: Spring 2022</p></li>
+<li><p>at University of Oregon: Summer 2019</p>
+<!-- - [Github repo](https://github.com/lx0413/EC313) --></li>
 </ul>
 <div style="margin-bottom:50px;">
 
 </div>
 </div>
-<div id="courses-as-lab-teaching-assistant" class="section level3">
-<h3>Courses as Lab Teaching Assistant</h3>
-<p>Entering Fall 2020, I have assisted in teaching 2 undergraduate-level classes a total of 4 times. Enrollment ranges from small groups of 7 students to larger groups of 48 students. As a lab teaching assistant, I teach students how to use <a href="https://www.stata.com/">Stata</a>, <a href="https://www.r-project.org/about.html">R</a> and <a href="https://rstudio.com/">Rstudio</a> to analyze data and identify causal relationships. I also lead discussion and organize group activities.</p>
+</div>
+<div id="lab-teaching-assistant" class="section level3">
+<h3>Lab Teaching Assistant</h3>
+<!-- Entering Fall 2020,  -->
+<p>I have assisted in teaching 2 undergraduate-level classes a total of
+4 times. Enrollment ranges from small groups of 7 students to larger
+groups of 48 students. As a lab teaching assistant, I teach students how
+to use <a href="https://www.stata.com/">Stata</a>, <a
+href="https://www.r-project.org/about.html">R</a> and <a
+href="https://rstudio.com/">Rstudio</a> to analyze data and identify
+causal relationships. I lead discussion and organize group
+activities.</p>
+<div id="introduction-to-econometrics" class="section level4">
+<h4>Introduction to Econometrics</h4>
 <ul>
-<li><p>EC320 Introduction to Econometrics: Spring 2019, Fall 2020</p></li>
-<li><p>EC202 Intro to Economic Analysis: Macroeconomics: Spring 2017, Winter 2018</p></li>
+<li>at University of Oregon: Spring 2019, Fall 2020</li>
+</ul>
+</div>
+<div id="intro-to-economic-analysis-macroeconomics"
+class="section level4">
+<h4>Intro to Economic Analysis: Macroeconomics</h4>
+<ul>
+<li>at University of Oregon : Spring 2017, Winter 2018</li>
 </ul>
 <div style="margin-bottom:50px;">
 
+</div>
 </div>
 </div>
 <div id="teaching-assessment" class="section level3">
 <h3>Teaching Assessment</h3>
-<p>In Fall 2019, the University of Oregon discontinued quantitative student evaluations due to research demonstrating their bias. Here I present my quantitative reviews from prior to that change. Below is the quantitative ratings for “EC370 Money &amp; Banking” that I taught in Winter 2019. My instructional quality exceeded the department average across the board.</p>
+<p>In Fall 2019, the University of Oregon discontinued quantitative
+student evaluations due to research demonstrating their bias. Here I
+present my quantitative reviews from prior to that change. Below is the
+quantitative ratings for “EC370 Money &amp; Banking” that I taught in
+Winter 2019. My instructional quality exceeded the department average
+across the board.</p>
 <p><img src="teaching_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<p>Since Fall 2019, the University of Oregon has moved toward a criteria-based approach to evaluation teaching. Here I present reviews from student experience survey for “EC370 Money &amp; Banking” that I taught in Fall 2019.</p>
+<p>Since Fall 2019, the University of Oregon has moved toward a
+criteria-based approach to evaluation teaching. Here I present reviews
+from student experience survey for “EC370 Money &amp; Banking” that I
+taught in Fall 2019.</p>
 <p><img src="teaching_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 </div>
 <div id="student-comments" class="section level3">
 <h3>Student Comments</h3>
-<p><em>“Worked hard to make sure students understood the material. Made it evident that she cares and wants students to be successful. Was very reachable outside of the classroom. … Powerpoints were put together well. In-class problems correlated well with exam materials. Quizzes were good indicators of how well students know the chapter.”</em></p>
+<p><em>“Worked hard to make sure students understood the material. Made
+it evident that she cares and wants students to be successful. Was very
+reachable outside of the classroom. … Powerpoints were put together
+well. In-class problems correlated well with exam materials. Quizzes
+were good indicators of how well students know the chapter.”</em></p>
 <!-- -- Taylor Athan_ -->
-<p><em>“Honestly, this instructor is one of my favorite instructor so far. She’s so kind and when we have a quiz to midterm, she told us lots of details that we should focus on. Her class is interesting and I really like it.”</em></p>
+<p><em>“Honestly, this instructor is one of my favorite instructor so
+far. She’s so kind and when we have a quiz to midterm, she told us lots
+of details that we should focus on. Her class is interesting and I
+really like it.”</em></p>
 <!-- -- Pengfei Qin_ -->
-<p><em>“Xiang does a great job helping students understand course material. She also shares cool information that helps students learn more about the topic, such as interesting economics podcasts. … I think the course was really well organized. It was very helpful to have weekly practice problems which kind of served as optional homework, to help students practice course material. That helped me a lot with remembering things learned.”</em></p>
+<p><em>“Xiang does a great job helping students understand course
+material. She also shares cool information that helps students learn
+more about the topic, such as interesting economics podcasts. … I think
+the course was really well organized. It was very helpful to have weekly
+practice problems which kind of served as optional homework, to help
+students practice course material. That helped me a lot with remembering
+things learned.”</em></p>
 <!-- -- Marie Rose Tonguino_ -->
-<p><em>“The course itself is structured well. Xiang provided us with many practice problems which helped with mastering the course material. … Xiang is a great professor who is very organized and utilizes class time well.”</em></p>
+<p><em>“The course itself is structured well. Xiang provided us with
+many practice problems which helped with mastering the course material.
+… Xiang is a great professor who is very organized and utilizes class
+time well.”</em></p>
 <!-- -- Ashvin Ashoke_ -->
-<p><em>“Xiang did a great job of being clear about what was required for this course. Her lectures were informative.”</em></p>
+<p><em>“Xiang did a great job of being clear about what was required for
+this course. Her lectures were informative.”</em></p>
 <!-- -- Tyler Hanson_ -->
-<p><em>“Professor Li was very good at getting through a lot of material in each class period.”</em></p>
+<p><em>“Professor Li was very good at getting through a lot of material
+in each class period.”</em></p>
 <!-- -- Sean Vermilya_ -->
-<p><em>Instructor was helpful in clarifying course material (during office hours) on various occasions. She was accessible, approachable, and seemed passionate about her students’ success.</em></p>
-<p><em>Xiang Li was very supportive and understanding when emergency issues arose during the quarter. She was very helpful in explaining what was expected of the students.</em></p>
-<p><em>I have never had a teacher as on top of posting Canvas as this class. Did an excellent job in communicating assignments and posting them quickly after class.</em></p>
+<p><em>Instructor was helpful in clarifying course material (during
+office hours) on various occasions. She was accessible, approachable,
+and seemed passionate about her students’ success.</em></p>
+<p><em>Xiang Li was very supportive and understanding when emergency
+issues arose during the quarter. She was very helpful in explaining what
+was expected of the students.</em></p>
+<p><em>I have never had a teacher as on top of posting Canvas as this
+class. Did an excellent job in communicating assignments and posting
+them quickly after class.</em></p>
 <div style="margin-bottom:50px;">
 
 </div>
@@ -401,7 +443,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -419,7 +461,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
