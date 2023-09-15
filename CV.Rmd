@@ -7,8 +7,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-My full CV is available [here](files/Xiang-LI_CV.pdf).
+My full CV is available [here](CV/CV.pdf).
 
 <img src="images/IMG_0830.jpg" style="width:85%; border:3px solid; margin-right: 20px" align="left">
 
-_photo credit: Xiang LI_
+_Photo credit: Xiang LI_
