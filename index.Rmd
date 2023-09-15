@@ -5,7 +5,9 @@ subtitle: Ph.D., Economist, Data Scientist
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-Welcome! I am an assistant professor of economics at Butler University, Indianapolis, Indiana. I received a Ph.D. in Economics at the University of Oregon in 2021, and an M.S. in Policy Economics at the University of Illinois at Urbana Champaign in 2014. 
+Welcome! I am an economist with 6 years of experience in quantitative analysis and statistical programming (R, Python, SQL). My expertise focuses on applying time-series econometrics to conduct economic forecasting and nowcasting. I am interested in using complex data to conduct research on the dynamics of financial markets and macroeconomics. I am enthusiastic about supporting business decision-making and and presenting results to technical and non-technical audiences.
+
+<!-- I am an assistant professor of economics at Butler University, Indianapolis, Indiana.  -->
 
 <!-- fifth-year Ph.D. candidate in the [Department of Economics](https://economics.uoregon.edu/) at the [University of Oregon](https://www.uoregon.edu/).  -->
 
@@ -20,17 +22,28 @@ Welcome! I am an assistant professor of economics at Butler University, Indianap
 
 **Fields of Expertise**: 
 
-Applied macroeconomics, time-series econometrics, forecasting and nowcasting,  monetary policy, textual analysis
+- Applied macroeconomics
+- Time-series econometrics
+- Economic Forecasting and nowcasting
+- Monetary policy
+- Textual analysis
 
-**Dissertation Committee**:
 
-[Jeremy Piger](https://pages.uoregon.edu/jpiger/) (Chair)
+**Education**:
 
-[George Evans](https://pages.uoregon.edu/gevans/)
+- Ph.D., Economics, University of Oregon, Eugene, OR, USA 2016-2021
+- M.S., Policy Economics, University of Illinois at Urbana Champaign, IL, USA 2014-2015
+- B.S., Economics, University of International Business and Economics, Beijing, China 2009-2013
 
-[David Evans](http://econevans.com/)
+<!-- **Dissertation Committee**: -->
 
-[Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/) (Outside member: Computer Science)
+<!-- [Jeremy Piger](https://pages.uoregon.edu/jpiger/) (Chair) -->
+
+<!-- [George Evans](https://pages.uoregon.edu/gevans/) -->
+
+<!-- [David Evans](http://econevans.com/) -->
+
+<!-- [Thien Huu Nguyen](https://ix.cs.uoregon.edu/~thien/) (Outside member: Computer Science) -->
 
 <!-- **Placement Directors**: [Michael Kuhn](https://economics.uoregon.edu/profile/mkuhn/), [Keaton Miller](https://economics.uoregon.edu/profile/keatonm/) -->
 
