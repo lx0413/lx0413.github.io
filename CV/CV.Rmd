@@ -1,0 +1,138 @@
+---
+name: Xiang
+surname: LI, Ph.D.
+position: "Visiting Professor"
+address: "Department of Economics, Lewis & Clark College, Portland, OR, USA"
+#phone: +1 22 3333 4444
+#pronouns: she/her
+profilepic: IMG_5173.jpg
+www: lx0413.github.io/
+email: "xiangli@lclark.edu"
+#twitter: mariecurie
+github: lx0413
+linkedin: www.linkedin.com/in/xiang-li-ph-d-241a6795/
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "I am an economist and a data scientist with 7 years of experience in quantitative analysis and statistical programming (R, Python, SQL, Git). I am bilingual in Chinese and English."
+output: vitae::twentyseconds
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# ABOUT ME
+
+ * My expertise focuses on applying time-series econometrics skills to perform economic forecasting and nowcasting. 
+ * I am interested in using complex data to study the impact of monetary policy on macroeconomic variables and financial markets.
+ * I also conduct research using approaches to textual analysis.
+ * I am enthusiastic about supporting business decision-making and and presenting results to technical and non-technical audiences.
+
+# EDUCATION
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where, ~ Desc,
+  "Ph.D., Economics", "2016-2021", "University of Oregon", "Eugene, OR, USA", "Dissertation Committee: Jeremy Piger (Chair), George Evans, David Evans, Thien H. Nguyen (Computer Science)",
+  "M.S., Policy Economics", "2014-2015", "University of Illinois", "Urbana-Champaign, IL, USA", "Areas of Specialization: Industrial Organization",
+  "B.S., Economics", "2009-2013", "University of International Business and Economics", "Beijing, China","Minor in Japanese"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where, Desc)
+```
+
+# PRIMARY POSITIONS
+
+```{r}
+tribble(
+  ~ Position, ~ Year,  ~ Institution,  ~ Where,
+  "Visiting Professor", "2023-", "Lewis & Clark College", "Portland, OR, USA",
+  "Assistant Professor", "2021-2022",  "Butler University", "Indianapolis, IN, USA", 
+  "Research Fellow", "2021","Singapore Management University", "Singapore"
+) %>% 
+  detailed_entries(Position, Year, Institution, Where)
+```
+
+
+<!-- # Publications -->
+```{r}
+# library(dplyr)
+# knitr::write_bib(c("vitae", "tibble"), "packages.bib")
+# 
+# bibliography_entries("packages.bib") %>%
+#   arrange(desc(author$family), issued)
+```
+
+# RESEARCH EXPERIENCE
+
+**Nowcasting Business Cycle Phases with High-Frequency Data**
+
+- _Objective_: I want to propose a procedure to measure probabilities of the U.S expansions and recessions post 1980.
+- _Method_: I constructed a novel real-time dataset using vintages of U.S. macroeconomic data. I established a mixed-frequency dynamic factor model and extracted a daily index to proxy for economic activity using Kalman filter and Maximum Likelihood Estimation. I trained a supervised Markov regime-switching classifier to measure recession probabilities.
+- _Result_: My model significantly and consistently improves the speed at which expansions and recessions can be identified in the United States since 1980. As representative examples, my model identified the 2007-2009 Great Recession on March 30, 2008, 246 days ahead of the National Bureau of Economic Research (NBER) announcement. During the Covid-19 pandemic, while the NBER announced on June 8, 2020 that a new recession had started in the United States since March 2020, my model identified this recession on March 22, 2020, 78 days ahead of the NBER announcement.
+
+
+**A New High Frequency, News Based, Indicator of Macroeconomic Activity**
+
+- _Objective_: I want to extract information encoded in the news articles to identify the U.S expansions and recessions faster.
+- _Method_: I compiled 410,601 economic news articles and pre-processed the raw text using textual analysis techniques, including tokenization, removing stopwords, stemming, and reversing negation words. I applied dictionary methods to develop a high-frequency News-Based Sentiment Index to proxy for aggregate economic conditions in the United States post 1991.
+- _Result_: With the news-based sentiment index incorporated, my model identified the Great Recession even earlier, on December 2, 2007; in addition, my model identified the Covid-19 recession 71 days ahead of the NBER announcement.
+
+
+\newpage
+
+**Is the Response of Economic Output to Monetary Policy Asymmetric in China?**
+
+- _Objective_: I want to study the impact of monetary policy on output growth in high-growth vs. low-growth periods in China.
+- _Method_: I pre-processed data by removing effects of the Lunar New Year, adjusting for seasonality, handling missing values and outliers by an iterative expectation-maximization algorithm, and removing a local mean using a biweight kernel. I measured Chinese economic activity using dynamic factors and identified monetary policy shocks using a factor-augmented vector autoregression. I used a smooth increasing function to measure probabilities of the economy in high- and low-growth states.
+- _Result_: Using local projection methods, I found that monetary policy had larger impacts on output in low-growth states.
+
+
+_Note: see the personal website, https://lx0413.github.io/research.html, for data visualization, detailed results, and the most recent version of my research._
+
+
+# TEACHING EXPERIENCE
+
+**Visiting Professor of Economics** \hfill Lewis & Clark College, Portland, OR, USA
+
+- Money and Banking: Fall 2023
+- Statistics (in R): Fall 2023, Spring 2024
+- Intermediate Macroeconomics: Fall 2023, Spring 2024
+
+**Assistant Professor of Economics** \hfill Butler University, Indianapolis, IN, USA 
+
+- Money and Banking: Fall 2021, Spring 2022
+- Intermediate Macroeconomics: Spring 2022
+
+**Sole Instructor** \hfill University of Oregon, Eugene, OR, USA
+
+- Money and Banking: Summer 2018, Winter 2019, Fall 2019, Spring 2020, Spring 2021 
+- Intermediate Macroeconomics: Summer 2019
+
+**Lab Teaching Assistant** \hfill University of Oregon, Eugene, OR, USA
+
+- Introduction to Econometrics: Spring 2019 (in Stata), Fall 2020 (in R)
+- Intro to Macroeconomic Analysis: Spring 2017, Winter 2018
+
+_Note: see the personal website, https://lx0413.github.io/teaching.html, for instructional quality ratings and student comments._
+
+# AWARDS and RECOGNITION
+
+- Graduate Teaching Fellowship, University of Oregon  \hfill 2016-21
+- Kleinsorge Summer Research Fellowship, University of Oregon \hfill 2020
+- Summer Teaching Fellowship, University of Oregon \hfill  2018-19
+- Research Assistant to Jonathan Davis, University of Oregon \hfill 2019
+- 3rd place, 3-Minute Thesis competition, University of Oregon \hfill 2019
+- Research Assistant to Hong Li, Peking University \hfill 2013
+- Meritorious Winner, Interdisciplinary Contest in Modeling, Consortium for Mathematics and Its Application \hfill 2012 
+- University Scholarship, University of International Business and Economics \hfill 2009-10
+
+# PRESENTATIONS and CONFERENCES
+
+- Indianapolis Scientech Club \hfill 2021
+- Western Economic Association International Annual Conference \hfill 2021 
+- The Chinese Economists Society 2021 Annual Conference \hfill 2021
+- Economics Club, University of Oregon \hfill 2020 
+- Macro Group, University of Oregon \hfill 2019-20
+- Mini Machine Learning course, University of Oregon \hfill 2019
+- Google Earth Engine Workshop, Oregon State University \hfill 2018
