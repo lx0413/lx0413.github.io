@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.1)  15 SEP 2023 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.1)  16 SEP 2023 09:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -857,10 +857,10 @@ Package rerunfilecheck Info: File `CV.out' has not changed.
  )
 (\end occurred when \ifnum on line 31 was incomplete) 
 Here is how much of TeX's memory you used:
- 23549 strings out of 476025
- 436330 string characters out of 5790018
+ 23547 strings out of 476025
+ 436298 string characters out of 5790018
  1881388 words of memory out of 5000000
- 43579 multiletter control sequences out of 15000+600000
+ 43577 multiletter control sequences out of 15000+600000
  543896 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,11n,118p,580b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -871,7 +871,7 @@ exlive/2023/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono-Oblique.pfb></u
 sr/local/texlive/2023/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.p
 fb>
-Output written on CV.pdf (2 pages, 1925607 bytes).
+Output written on CV.pdf (2 pages, 1925622 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream

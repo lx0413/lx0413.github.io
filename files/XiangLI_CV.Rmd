@@ -1,0 +1,270 @@
+---
+output: 
+  pdf_document:
+    latex_engine: pdflatex
+    #template: /Users/lixiang/Desktop/resume/svm-latex-cv.tex
+geometry: left=1in, top=1in, right=1in, bottom=1in
+
+# title: "resume"
+title: \textbf{Xiang LI, Ph.D.}
+
+#jobtitle: "PhD student in Economics"
+# address: "2250 Patterson Street, Unit 129, Eugene, OR, 97405"
+fontawesome: yes
+# github: 
+# twitter:
+web: http://lx0413.github.io 
+updated: no
+
+keywords: R Markdown, academic CV, template
+
+fontfamily: mathpazo
+fontfamilyoptions: sc, osf
+fontsize: 10pt
+linkcolor: blue
+urlcolor: blue
+
+---
+
+# EDUCATION
+**Ph.D.**, Economics, University of Oregon, OR, USA \hfill _2021_
+
+- Dissertation: Essays On High-Frequency Macroeconomic Monitoring
+- Dissertation Committee: Jeremy Piger (Chair), George Evans, David Evans, Thien H. Nguyen (Computer Science)
+
+**M.S.**, Policy Economics, University of Illinois at Urbana Champaign, IL , USA \hfill _2015_
+
+**B.S.**, Economics, University of International Business and Economics, Beijing, China  \hfill _2013_
+
+<!-- - Economics Honors Program (Minor in Japanese) -->
+
+# PRIMARY POSITIONS
+
+**Assistant Professor of Economics**, Lacy School of Business, Butler University, IN, USA \hfill _2021 - 2022_
+
+**Research Fellow**, Sim Kee Boon Institute for Financial Economics, Singapore Management University, Singapore \hfill _2021_
+
+<!-- **Instructor of Economics**, University of Oregon, Eugene, OR, USA \hfill _2016 - 2021_ -->
+
+
+
+# FIELDS of EXPERTISE
+
+Macroeconomics, econometrics, time-series, forecasting, nowcasting, monetary policy, textual analysis
+
+
+# RESEARCH
+
+**Nowcasting Business Cycle Phases with High-Frequency Data** 
+
+- _Objective_: I want to propose a procedure to measure probabilities of the U.S. expansions and recessions.
+- _Method_: I constructed a novel real-time dataset using vintages of U.S. macroeconomic data. I established a mixed-frequency dynamic factor model and extracted a daily index to proxy for economic activity using Kalman filter and Maximum Likelihood Estimation. I trained a supervised Markov regime-switching classifier to measure recession probabilities. 
+- _Result_: My model significantly and consistently improves the speed at which expansions and recessions can be identified in the United States since 1980. As representative examples, my model identified the 2007-2009 Great Recession on March 30, 2008, 246 days ahead of the National Bureau of Economic Research (NBER) announcement. During the Covid-19 pandemic, while the NBER announced on June 8, 2020 that a new recession had started in the United States since March 2020, my model identified this recession on March 22, 2020, 78 days ahead of the NBER announcement.
+
+<!-- Timely identification of expansions and recessions is of substantial interest to real-time economic decision makers, including firms, policymakers, and individual consumers. My paper systematically explores whether the use of high-frequency data (a daily inverse yield curve, a weekly initial claim to unemployment insurance), leading data (the inverse yield curve), and information from economic news articles (a novel daily sentiment index) can improve the speed at which expansions and recessions are identified over the existing literature that focuses primarily on low frequency and coincident data. I use a mixed-frequency dynamic factor model combined with a Markov-switching model and find that business cycle phases in the United States since 1980 are significantly and consistently identified. As a representative example, my model identifies the 2007-2009 Great Recession 365 days ahead of the National Bureau of Economic Research announcement and ahead of other statistical models surveyed in Hamilton (2011).   -->
+
+<!-- - Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly and daily frequencies from April 1962 to August 2020. -->
+<!-- - Modeled the economic activity at daily intervals using using a mixed-frequency dynamic factor model and extracted the optimal latent economic activity factor with the Kalman filter and smoother.  -->
+<!-- - Measured the probability of recessions in real-time using a supervised Markov regime-switching classifier.  -->
+<!-- - Proposed a procedure to convert probabilities of recessions into a binary variable that defines the expansion or recession regime on a daily basis. -->
+<!-- - This work elucidated that the use of high-frequency data and leading data significantly improves the speed at which expansions and recessions can be identified in U.S. since 1980.  -->
+
+<!-- As representative examples, with high frequency and leading data included into the analysis, the model identifies the start of the Great Recession 256 days ahead of the NBER announcement and many months ahead of the statistical procedures surveyed in Hamilton (2011). When I further incorporate information from the news-based sentiment index in Li (2020), I am able to identify the December 2007 business cycle peak even earlier, on December 2, 2007. During the Covid-19 pandemic, the NBER announced on June 8, 2020, that a new recession started in the U.S. in March 2020, my model identified the start of this recession on March 22, 2020, 78 days ahead of the NBER announcement. -->
+
+
+<!-- As a representative example, during the Covid-19 pandemic, the NBER announced on June 8, 2020, that a new recession started in the U.S. in March 2020, my model identified the start of this recession on March 15, 2020, 85 days ahead of the NBER announcement. -->
+
+<!-- - Developed a novel real-time dataset of macroeconomic variables at quarterly, monthly, weekly and daily frequencies. -->
+<!-- - Measured the economic activity at daily intervals using dynamic factor models, and measured the probability of expansions and recessions in real time.  -->
+<!-- - This work elucidated that the use of higher frequency data significantly improves the speed at which expansions and recessions can be identified in U.S. since 1980. -->
+
+<!--- I take a three-step approach. First, I use the mixed frequency dynamic factor model to extract a coincident index of real economic activity using daily, weekly, monthly and quarterly data. Second, I train a variety of supervised machine learning classification techniques to classify the coincident index into recession and expansion regimes. Finally, I use these trained classifiers to evaluate the evidence for new business cycle turning points in end-of-sample data that has not yet been classified by the NBER. --->
+
+\newpage
+
+**A New High Frequency, News Based, Indicator of Macroeconomic Activity** 
+
+- _Objective_: I want to extract information encoded in the news articles to identify the U.S. expansions and recessions faster.
+- _Method_: I compiled 410,601 economic news articles and pre-processed the raw text using textual analysis techniques, including tokenization, removing stopwords, stemming, and reversing negation words. I applied dictionary methods to develop a high-frequency News-Based Sentiment Index to proxy for aggregate economic conditions in the United States post 1991. 
+- _Result_: With the news-based sentiment index incorporated, my model identified the Great Recession even earlier, on December 2, 2007; in addition, my model identified the Covid-19 recession 71 days ahead of the NBER announcement.
+
+
+<!-- In this paper, I collected a large sample of 410,601 economic news articles published from April 2, 1991, to April 30, 2020. I proposed a procedure to pre-process the raw text as a manageable high-dimensional numerical array, including tokenization, removing stopwords, stemming, and reversing negation words. Then I applied dictionary methods to develop a high-frequency News-Based Sentiment Index to proxy for aggregate economic conditions in the United States.  -->
+
+**Is the Response of Economic Output to Monetary Policy Asymmetric in China?** 
+
+- _Objective_: I want to study the impact of monetary policy on output growth in high-growth vs. low-growth periods in China. 
+- _Method_: I pre-processed data by removing effects of the Lunar New Year, adjusting for seasonality, handling missing values and outliers by an iterative expectation-maximization algorithm, and removing a local mean using a biweight kernel. I measured Chinese economic activity using dynamic factors and identified monetary policy shocks using a factor-augmented vector autoregression. I used a smooth increasing function to measure probabilities of the economy in high- and low-growth states. 
+- _Result_: Using local projection methods, I found that monetary policy had larger impacts on output in low-growth states.
+
+
+<!-- My paper studies asymmetry in the response of the Chinese economy to monetary policy. Asymmetry is defined in terms of the effects of monetary policy in high-growth periods vs. low-growth periods. Chinese economic activity are measured using dynamic factors extracted from a large number of underlying indicators. Monetary policy shocks are identified from a factor-augmented vector autoregression. High-growth and low-growth phases are measured using a smooth transition logistic function. Finally, the response of economic activity to monetary policy shocks in high-growth periods vs. low-growth periods are estimated via the local projection method. I find evidence that monetary policy shocks have larger impacts on output growth during low-growth states; however, during high-growth states, monetary policy shocks have larger impacts on inflation rate. This evidence is consistent with a convex aggregate supply curve. My paper is the first to study asymmetric effects of monetary policy on the Chinese economy over the business cycle. -->
+
+
+
+<!-- proposed a procedure to pre-process the raw text as a manageable high-dimensional numerical array, including tokenization, removing stopwords, stemming, and reversing negation words.  -->
+
+
+
+<!-- I assessed the validity of this developed NBSI by estimating the usefulness of NBSI in identifying U.S. expansions and recessions in real time. Nowcasting model that incorporates information from news identifies the December 2007 business cycle peak on December 2, 2007, 365 days ahead of the announcement made by the National Bureau of Economic Research -->
+
+<!-- - Assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures and estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real time.  -->
+
+
+<!-- - Developed a weekly News-Based Sentiment Index (NBSI) regarding economic conditions based on articles sourced from The Wall Street Journal using dictionary methods. -->
+<!-- - Assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures.  -->
+<!-- - Estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real time.  -->
+
+_Note: see the personal website, https://lx0413.github.io/research.html, for data visualization, detailed results, and the most recent version of my research._
+
+<!-- This paper is the first to study asymmetry in the response of monetary policy on -->
+<!-- the Chinese economy over the business cycle. Asymmetry is defined in terms of the effects of -->
+<!-- monetary policy in high-growth periods vs. low-growth periods. High-growth and low-growth phases -->
+<!-- are measured using a smooth transition logistic function. Using local projection method, I find -->
+<!-- evidence that monetary policy shocks have larger impacts on output growth during low-growth states; during high-growth states, monetary policy shocks have larger impacts on inflation. This evidence is consistent with a convex aggregate supply curve. -->
+
+<!-- - Estimated monetary policy shocks in China, using a combination of dynamic factors models and factor-augmented vector autoregression. -->
+<!-- - Applying local projection methods, I determined that the monetary policy shock has larger impacts on output growth during low-growth states and that monetary policy shock has larger impacts on aggregate price during high-growth states. -->
+
+<!--- I take a four-step approach. First, Chinese economic activity and aggregate price level are measured using dynamic factors models. Second, monetary policy shocks are identified with Choleski residuals from a factor-augmented vector autoregression. Third, high-growth vs. low-growth phases are measured using a smooth transition logistic function. Lastly, the response of economic activity and price to monetary policy shocks in high-growth periods vs. low-growth periods are estimated via the local projection method--->
+
+<!-- - Collected and pre-processed fundamental series that correlate with output and price in China   -->
+<!-- - Extracted the latent economic activity factor and inflation factor from underlying variables with the first principal component using a dynamic factor model.  -->
+<!-- - Estimated  structural shocks of monetary policy from Choleski decomposition of residuals from a Factor Augmented Vector Autoregression model.  -->
+<!-- - Measured probabilities of the unobservable states of the economy being in high-growth & low-growth states using a smooth transition logistic function  -->
+<!-- - Estimating impulse response functions of the economic activity factor and inflation factor using local projections methods, I determined that the monetary policy shock has larger impacts on output growth during low-growth states and that monetary policy shock has larger impacts on aggregate price during high-growth states. -->
+
+<!---
+- This paper is the first to study asymmetry in the response of monetary policy on the Chinese economy over the business cycle. Asymmetry is defined in terms of the effects of monetary policy in high-growth periods vs. low-growth periods. High-growth and low-growth phases are measured using a smooth transition logistic function. Using local projection method, I find evidence that monetary policy shocks have larger impacts on output growth during low-growth states; during high-growth states, monetary policy shocks have larger impacts on inflation. This evidence is consistent with a convex aggregate supply curve
+--->
+
+<!---
+**Forecasting Using Bayesian VAR** 
+- This paper uses a quarterly US data set on inflation rate, unemployment rate, and interest rate from 1948Q1 to 2018Q1, and then performs an (pseudo) out-of-sample 1-period and 4-period forecast
+- This paper uses Bayesian method to estimate a VAR(2) model, based on 2 analytical priors (Minnesota prior and Natural Conjugate prior), and 2 non-analytical priors (Independent Normal - Wishart prior and Stochastic Search Variable Selection prior)
+- This paper shows that SSVC prior performs a better 1-period forecast, and independent Normal-Wishart prior performs a better 4-period forecast, in terms of minimal mean squared forecast error
+- As forecast horizon gets longer, Minnesota prior generates a large forecast error. Non-analytical prior performs better than analytical priors in terms of forecast ability, especially when forecast horizon gets longer
+--->
+
+<!---
+**Detecting the Potential Conspirators** (Working paper, with Yizhi Chen and Dong Wang, Awarded Meritorious Winner of 2012 Mathematical Contest in Modeling by the Consortium for Mathematics & Applications) 
+
+- Analyzing data on confirmed criminals, this project applies degree, betweenness and connection in social network analysis to measure crime probabilities of suspects in the network.
+- I explored analytic hierarchy process and pointwise mutual information methods to quantify semantic orientation of messages conveyed in a crime network.
+--->
+
+<!-- **Note**: the recent revisions of projects can be found on my website, https://lx0413.github.io/research.html -->
+
+
+# TEACHING EXPERIENCE
+
+**Assistant Professor**, Butler University, Indianapolis, IN
+
+- Money and Banking: Fall 2021, Spring 2022
+- Intermediate Macroeconomics: Spring 2022
+
+**Sole Instructor**, University of Oregon, Eugene, OR
+
+- Money and Banking: Summer 2018, Winter 2019, Fall 2019, Spring 2020, Spring 2021
+- Intermediate Macroeconomics: Summer 2019
+
+**Lab Teaching Assistant**, University of Oregon, Eugene, OR
+
+- Introduction to Econometrics: Spring 2019 (in _Stata_), Fall 2020 (in _R_)
+- Intro to Macroeconomic Analysis: Spring 2017, Winter 2018 
+
+_Note: see the personal website, https://lx0413.github.io/teaching.html, for instructional quality ratings and student comments._
+
+
+  <!-- - Delivered lectures, organized lab and group discussion, and created an inclusive environment where students apply quantitative & graphical skills and economics intuition to understand the evolving real-world issues, news, and events.  -->
+  <!-- - Held office hours, evaluated students' performance, and assisted students outside of class to achieve personal academic goals. -->
+  <!-- - Turned in-person teaching into remote teaching efficiently on short notice and without much guidance, amid the Covid-19 pandemic. -->
+  <!-- - Organized graduate student grading assignments and exams. -->
+  
+  <!-- - Taught students how to use [Stata](https://www.stata.com/), [R](https://www.r-project.org/about.html) and [Rstudio](https://rstudio.com/) to analyze data and identify causal relationships.  -->
+  <!-- - Led lab discussion and organized group activities. -->
+  
+<!-- **Note**: student experience survey, instructional quality ratings, student comments, and course materials written by R Markdown can be found on my website, https://lx0413.github.io/teaching.html -->
+
+
+
+# AWARDS and RECOGNITION
+Graduate Teaching Fellowship, University of Oregon \hfill _2016 - 2021_
+
+Kleinsorge Summer Research Fellowship,  University of Oregon \hfill _2020_
+
+Summer Teaching Fellowship, University of Oregon \hfill _2018 - 2019_
+
+Research Assistant to Jonathan Davis, University of Oregon \hfill _2019_
+
+3rd place, 3-Minute Thesis competition, Grad Research Forum, University of Oregon \hfill _2019_
+
+Research Assistant to Hong Li, Peking University \hfill _2013_
+
+Meritorious Winner, Interdisciplinary Contest in Modeling, Consortium for Mathematics and Its Applications \hfill _2012_
+
+University Scholarship, University of International Business and Economics \hfill _2009 - 2010_
+<!-- - 1st prize, China National English Contest for College Students \hfill _2011_ -->
+<!-- - 3rd prize, China National English Speaking Competition \hfill _2011_ -->
+
+<!--- - Simulated a dataset with 7000 observations and 131 variables according to the statistics of each variable
+- Reviewed R code for a project that uses random forest and causal forest methods to explore treatment heterogeneity effects of summer jobs on youth behavioral changes --->
+
+<!--- - Wrote project proposals for 2013 China National Natural Science Fund 
+- Authored literature review on correlations between resource endowment and spatial layout, rationality of spatial layout, site selection of renewable resource--->
+
+
+# PRESENTATIONS and CONFERENCES
+
+Indianapolis Scientech Club \hfill _2021_
+
+Western Economic Association International 96th Annual Conference \hfill _2021_
+
+The Chinese Economists Society 2021 Annual Conference \hfill _2021_
+
+Economics Club, University of Oregon \hfill _2020_
+
+Macro Group, University of Oregon \hfill _2019 - 2020_
+  
+Mini Machine Learning course, University of Oregon \hfill _2019_
+
+Google Earth Engine Workshop, Oregon State University  \hfill _2018_
+
+
+<!-- # PROFESSIONAL EXPERIENCE -->
+
+<!-- **Administrative Assistant**, Commercial Factoring Expertise Committee of CATIS \hfill _2013 - 2014_ -->
+
+<!-- - Analyzed data and wrote reports regarding foreign exchange rates, taxation, financing, and legal policy issues that commercial factoring companies in China are facing. -->
+<!-- - Cooperated with the Factors Chain International based in Amsterdam to set up education programs in China -->
+<!-- - Operated website and independently produced the digital magazine “CFEC Monthly” -->
+
+<!--- - Advanced proposals to the Ministry of Commerce that resulted in the development of standard terminology and regulation policies for commercial factoring industry in China
+- Worked with the Peoples’ Bank of China to establish a credit reference platform for factoring companies--->
+
+# TECHNICAL SKILLS
+Programs: R, Python, SQL, MATLAB, Git
+
+Languages: Mandarin, English
+
+
+<!-- # PROFESSIONAL REFERENCES -->
+<!-- **Jeremy Piger**   \newline -->
+<!-- Department Head, Professor of Economics  \newline -->
+<!-- University of Oregon  \newline -->
+<!-- \href{mailto:jpiger@uoregon.edu}{\texttt{jpiger@uoregon.edu}} \newline -->
+<!-- (541) 346-6075  \newline -->
+
+<!-- **George Evans** \newline -->
+<!-- John B. Hamacher Professor of Economics \newline -->
+<!-- University of Oregon \newline -->
+<!-- \href{mailto:gevans@uoregon.edu}{\texttt{gevans@uoregon.edu}} \newline -->
+<!-- (541) 346-4662 \newline -->
+
+<!-- **David Evans**  \newline -->
+<!-- Assistant Professor of Economics   \newline -->
+<!-- University of Oregon  \newline -->
+<!-- \href{mailto:devans@uoregon.edu}{\texttt{devans@uoregon.edu}}  \newline -->
+<!-- (541) 346-3431  \newline -->
+
+<!-- Please contact Sharon Kaplan \href{mailto:gradcoordes@uoregon.edu}{\texttt{gradcoordes@uoregon.edu}} to request reference letters. -->

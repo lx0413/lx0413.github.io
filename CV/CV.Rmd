@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
 ```
 
-# ABOUT ME
+# AREAS OF EXPERTISE 
 
  * My expertise focuses on applying time-series econometrics skills to perform economic forecasting and nowcasting. 
  * I am interested in using complex data to study the impact of monetary policy on macroeconomic variables and financial markets.
