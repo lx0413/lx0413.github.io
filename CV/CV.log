@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.1)  15 SEP 2023 12:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.1)  15 SEP 2023 19:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -831,13 +831,13 @@ LaTeX Font Info:    Font shape `T1/DejaVuSansMono-TLF/m/it' will be
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/sl' in size <10> not availab
 le
 (Font)              Font shape `T1/ClearSans-TLF/regular/sl' tried instead on i
-nput line 348.
+nput line 351.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/sl' in size <10> not a
 vailable
 (Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on i
-nput line 348.
+nput line 351.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 348.
+(Font)              scaled to size 10.0pt on input line 351.
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -871,7 +871,7 @@ exlive/2023/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono-Oblique.pfb></u
 sr/local/texlive/2023/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.p
 fb>
-Output written on CV.pdf (2 pages, 1925512 bytes).
+Output written on CV.pdf (2 pages, 1925607 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream
