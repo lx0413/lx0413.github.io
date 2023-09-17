@@ -13,24 +13,38 @@
 
 <title>Xiang LI: Research</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +57,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
@@ -79,10 +69,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -99,40 +85,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 64px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h2 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h3 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h4 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h5 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h6 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -160,7 +122,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -172,7 +134,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -182,11 +144,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -198,13 +177,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -212,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -265,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -289,7 +260,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:xli4@uoregon.edu">
+  <a href="mailto:lx0413@gmail.com">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
@@ -307,7 +278,7 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="https://www.linkedin.com/in/xiang-ivy-li-241a6795/">
+  <a href="https://www.linkedin.com/in/xiang-li-ph-d-241a6795/">
     <span class="fa fa-linkedin fa-lg"></span>
      
   </a>
@@ -317,7 +288,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -332,11 +303,46 @@ $(document).ready(function () {
 <div style="margin-bottom:50px;">
 
 </div>
-<div id="nowcasting-business-cycle-phases-with-high-frequency-data-job-market-paper" class="section level3">
-<h3>Nowcasting Business Cycle Phases with High-Frequency Data (Job Market Paper)</h3>
-<p><strong>Motivation:</strong> Real-time tracking of the present state of macroeconomic activity, particularly for tracking recessions, is of great interest to firms, workers, financial market participants, and policymakers. Despite significant research focus on forecasting and nowcasting macroeconomic activity, there are still substantial delays in identifying key macroeconomic fluctuations. For example, the 2007-2009 Great Recession was not identified until mid-to-late 2008 by statistical tracking models in real-time, and the National Bureau of Economic Research (NBER) did not announce this recession until December 1, 2008. In this paper, I develop novel datasets and evaluate techniques for improved high-frequency monitoring of the macroeconomy.</p>
-<p><strong>Method</strong>: I developed a novel real-time dataset of macroeconomic data at quarterly, monthly, weekly, and daily frequencies from April 1962 to August 2020. I modeled and extracted the latent economic activity factor at daily intervals using a mixed-frequency dynamic factor model with a Kalman filter. I measured the probability of recessions in real time using a supervised Markov regime-switching classifier and a Hamilton filter. I then proposed a dating procedure to convert probabilities of recessions into a binary variable that defines whether the economy is in an expansion or a recession regime on a daily basis.</p>
-<p><strong>Result</strong>: the use of higher-frequency data, leading data, and information from economic news articles significantly and consistently improves the speed at which expansions and recessions can be identified in the United States since 1980. As representative examples, with high-frequency and leading data included into the analysis, my model identifies the 2007-2009 Great Recession on March 30, 2008, 246 days ahead of the NBER announcement and many months ahead of the statistical procedures surveyed in Hamilton (2011). When I further incorporate a news-based sentiment index developed in another of my project, Li (2020), my model identifies the Great Recession even earlier, on December 2, 2007. During the Covid-19 pandemic, the NBER announced on June 8, 2020 that a new recession has started in the United States since March 2020; however, my model identified this recession on March 22, 2020, 78 days ahead of the NBER announcement.</p>
+<div
+id="nowcasting-business-cycle-phases-with-high-frequency-data-job-market-paper"
+class="section level3">
+<h3>Nowcasting Business Cycle Phases with High-Frequency Data (Job
+Market Paper)</h3>
+<p><strong>Motivation:</strong> Real-time tracking of the present state
+of macroeconomic activity, particularly for tracking recessions, is of
+great interest to firms, workers, financial market participants, and
+policymakers. Despite significant research focus on forecasting and
+nowcasting macroeconomic activity, there are still substantial delays in
+identifying key macroeconomic fluctuations. For example, the 2007-2009
+Great Recession was not identified until mid-to-late 2008 by statistical
+tracking models in real-time, and the National Bureau of Economic
+Research (NBER) did not announce this recession until December 1, 2008.
+In this paper, I develop novel datasets and evaluate techniques for
+improved high-frequency monitoring of the macroeconomy.</p>
+<p><strong>Method</strong>: I developed a novel real-time dataset of
+macroeconomic data at quarterly, monthly, weekly, and daily frequencies
+from April 1962 to August 2020. I modeled and extracted the latent
+economic activity factor at daily intervals using a mixed-frequency
+dynamic factor model with a Kalman filter. I measured the probability of
+recessions in real time using a supervised Markov regime-switching
+classifier and a Hamilton filter. I then proposed a dating procedure to
+convert probabilities of recessions into a binary variable that defines
+whether the economy is in an expansion or a recession regime on a daily
+basis.</p>
+<p><strong>Result</strong>: the use of higher-frequency data, leading
+data, and information from economic news articles significantly and
+consistently improves the speed at which expansions and recessions can
+be identified in the United States since 1980. As representative
+examples, with high-frequency and leading data included into the
+analysis, my model identifies the 2007-2009 Great Recession on March 30,
+2008, 246 days ahead of the NBER announcement and many months ahead of
+the statistical procedures surveyed in Hamilton (2011). When I further
+incorporate a news-based sentiment index developed in another of my
+project, Li (2020), my model identifies the Great Recession even
+earlier, on December 2, 2007. During the Covid-19 pandemic, the NBER
+announced on June 8, 2020 that a new recession has started in the United
+States since March 2020; however, my model identified this recession on
+March 22, 2020, 78 days ahead of the NBER announcement.</p>
 <!-- In several cases, business cycle turning points are called prior to -->
 <!-- their occurring, which demonstrates the value-added of incorporating leading data into the analysis.  -->
 <!-- while the National Bureau of Economic Research (NBER) announced on December 1, 2008, that a new recession, "the Great Recession", started in January 2008, my model identified the start of this recession on December 23, 2007, 256 days ahead of the NBER announcement.   -->
@@ -345,23 +351,59 @@ $(document).ready(function () {
 <img src="images/dynamic_factor_pseudo.gif" style="width:55%; border:3px solid; margin-right: 40px" align="center">
 </center>
 <p><br></p>
-<p><em>This animation shows the estimated economic activity factor on selected analysis dates from the January 6, 1979 through August 31, 2020. Shaded areas indicate U.S. recessions. The factor starts to drop at the beginning of recessions, suggesting that the extracted factor captures the the movement of economic activity correctly and quickly.</em></p>
+<p><em>This animation shows the estimated economic activity factor on
+selected analysis dates from the January 6, 1979 through August 31,
+2020. Shaded areas indicate U.S. recessions. The factor starts to drop
+at the beginning of recessions, suggesting that the extracted factor
+captures the the movement of economic activity correctly and
+quickly.</em></p>
 <center>
 <img src="images/BC7.png" style="width:75%; border:3px solid; margin-right: 40px" align="center">
 </center>
 <p><br></p>
-<p><em>As a representative example, incorporating high-frequency and leading data produces a call of the December 2007 business cycle peak on March 30, 2008, which is 246 days ahead of the NBER announcement, and many months ahead of the statistical procedures surveyed in Hamilton (2011). Further incorporating information from the news allows the model to identify this peak even earlier, on December 2, 2007.</em></p>
-<p><strong>Click <a href="files/Xiang-Ivy-Li_JobMarketPaper.pdf">here</a> for the most recent version of this project (Nov 2020)</strong></p>
-<p><strong>Click <a href="files/Dec2020.html">here</a> for presentation slides (Dec 2020)</strong></p>
+<p><em>As a representative example, incorporating high-frequency and
+leading data produces a call of the December 2007 business cycle peak on
+March 30, 2008, which is 246 days ahead of the NBER announcement, and
+many months ahead of the statistical procedures surveyed in Hamilton
+(2011). Further incorporating information from the news allows the model
+to identify this peak even earlier, on December 2, 2007.</em></p>
+<p><strong>Click <a
+href="files/Xiang-Ivy-Li_JobMarketPaper.pdf">here</a> for the most
+recent version of this project (Nov 2020)</strong></p>
+<p><strong>Click <a href="files/Dec2020.html">here</a> for presentation
+slides (Dec 2020)</strong></p>
 <div style="margin-bottom:50px;">
 
 </div>
 </div>
-<div id="a-new-high-frequency-news-based-indicator-of-macroeconomic-activity-preliminary-and-incomplete" class="section level3">
-<h3>A New High Frequency, News Based, Indicator of Macroeconomic Activity (Preliminary and Incomplete)</h3>
-<p><strong>Motivation:</strong> The information encoded in the text has been recently used in empirical economics research as a complement to the more structured macroeconomic and financial data traditionally used. Text selected from news, social media, reports, and speeches contains “soft” information missing in the quantifiable variables. Unlike most of the headline macroeconomic data that are published at a relatively low frequency and for which past observation periods are revised as more accurate estimates become available, text such as news articles arrives daily and is not revised. These advantages make data extracted from text an ideal candidate to build more accurate nowcasting models about aggregate economic activity in real-time.</p>
-<p><strong>Method:</strong> In this paper, I collected a large sample of lead paragraphs of news articles published in the United States from April 2, 1991, to August 31, 2020, that have subjects related to economic activity. I proposed a procedure to pre-process the raw text as a manageable high-dimensional numerical array, including tokenization, removing stopwords, stemming, and reversing negation words. I apply dictionary methods to develop a daily News-Based Sentiment Index regarding economic conditions.</p>
-<p><strong>Preliminary Results:</strong> The index drops sharply before the start of the recessions in the sample period, suggesting that the index is a leading indicator with respect to recessions and might be used to nowcast or even forecast recessions.</p>
+<div
+id="a-new-high-frequency-news-based-indicator-of-macroeconomic-activity-preliminary-and-incomplete"
+class="section level3">
+<h3>A New High Frequency, News Based, Indicator of Macroeconomic
+Activity (Preliminary and Incomplete)</h3>
+<p><strong>Motivation:</strong> The information encoded in the text has
+been recently used in empirical economics research as a complement to
+the more structured macroeconomic and financial data traditionally used.
+Text selected from news, social media, reports, and speeches contains
+“soft” information missing in the quantifiable variables. Unlike most of
+the headline macroeconomic data that are published at a relatively low
+frequency and for which past observation periods are revised as more
+accurate estimates become available, text such as news articles arrives
+daily and is not revised. These advantages make data extracted from text
+an ideal candidate to build more accurate nowcasting models about
+aggregate economic activity in real-time.</p>
+<p><strong>Method:</strong> In this paper, I collected a large sample of
+lead paragraphs of news articles published in the United States from
+April 2, 1991, to August 31, 2020, that have subjects related to
+economic activity. I proposed a procedure to pre-process the raw text as
+a manageable high-dimensional numerical array, including tokenization,
+removing stopwords, stemming, and reversing negation words. I apply
+dictionary methods to develop a daily News-Based Sentiment Index
+regarding economic conditions.</p>
+<p><strong>Preliminary Results:</strong> The index drops sharply before
+the start of the recessions in the sample period, suggesting that the
+index is a leading indicator with respect to recessions and might be
+used to nowcast or even forecast recessions.</p>
 <!-- I am able to identify the December 2007 business cycle peak on December 2, 2007, 365 days ahead of the NBER announcement and many months ahead of the statistical procedures surveyed in Hamilton (2011).  -->
 <!-- I assessed the validity of this developed NBSI by tracking a wide range of monthly macroeconomic activity measures, and estimated the usefulness of NBSI in identifying U.S. expansions and recessions in real-time.  -->
 <p><br></p>
@@ -369,32 +411,81 @@ $(document).ready(function () {
 <img src="images/wordcloud.gif" style="width:55%; border:3px solid; margin-right: 40px" align="center">
 </center>
 <p><br></p>
-<p><em>This animation shows the change of the most frequently used negative and positive words in news articles over years.</em></p>
+<p><em>This animation shows the change of the most frequently used
+negative and positive words in news articles over years.</em></p>
 <p><br></p>
 <center>
 <img src="images/all_monthly.png" style="width:75%; border:3px solid; margin-right: 20px" align="center">
 </center>
 <p><br></p>
-<p><em>This figure shows the movement between the monthly NBSI and monthly macroeconomic variables from April 1991 to April 2020. Monthly macroeconomic variables used here include the unemployment rate, total nonfarm payroll employment, industrial production, real manufacturing and industries sales, and the University of Michigan consumer sentiment index. The figure suggests that NBSI correctly captures the movement in these economic activity variables.</em></p>
-<p><strong>Click <a href="files/CHAPTER4.pdf">here</a> for the most recent version of this project (August 2020)</strong></p>
-<p><strong>Click <a href="files/CH4-SLIDE.html">here</a> for presentation slides (May 2020)</strong></p>
+<p><em>This figure shows the movement between the monthly NBSI and
+monthly macroeconomic variables from April 1991 to April 2020. Monthly
+macroeconomic variables used here include the unemployment rate, total
+nonfarm payroll employment, industrial production, real manufacturing
+and industries sales, and the University of Michigan consumer sentiment
+index. The figure suggests that NBSI correctly captures the movement in
+these economic activity variables.</em></p>
+<p><strong>Click <a href="files/CHAPTER4.pdf">here</a> for the most
+recent version of this project (August 2020)</strong></p>
+<p><strong>Click <a href="files/CH4-SLIDE.html">here</a> for
+presentation slides (May 2020)</strong></p>
 <div style="margin-bottom:50px;">
 
 </div>
 </div>
-<div id="is-the-response-of-economic-output-to-monetary-policy-asymmetric-in-china" class="section level3">
-<h3>Is the Response of Economic Output to Monetary Policy Asymmetric in China?</h3>
-<p><strong>Motivation:</strong> Since 2000, China’s economic growth has been very strong. It is now the second-largest economic engine in the world measured by nominal GDP, and the world’s largest economy by purchasing power parity, contributing 27 percent of global GDP in 2018. Despite this importance, there has been relatively little work done on understanding the effects of Chinese monetary policy. In this paper, I investigate how monetary policy instruments affect output growth and inflation, and whether this effect is asymmetric in high-growth periods vs. low-growth periods.</p>
-<p><strong>Method:</strong> I collected 34 monthly fundamental series that correlate with output and price in China. I pre-processed data to remove effects of the Lunar New Year, adjust for seasonality, impute missing values by an iterative expectation-maximization algorithm, and remove a local mean from each series using a biweight kernel. I extracted the latent economic activity factor and inflation factor from underlying variables with the first principal component using a dynamic factor model. I measured structural shocks of monetary policy from Choleski decomposition of residuals from a factor augmented vector autoregression model. As in Tenreyro &amp; Thwaites (2016), I measured probabilities of the unobservable states of the economy being in high-growth &amp; low-growth states using a smooth transition logistic function, and estimated impulse response functions of the economic activity factor and inflation factor using local projections methods.</p>
-<p><strong>Result</strong>: the monetary policy shock has larger impacts on output growth during low-growth states and the monetary policy shock has larger impacts on inflation rate during high-growth states. My paper is the first to study asymmetric effects of monetary policy on the Chinese economy over the business cycle.</p>
+<div
+id="is-the-response-of-economic-output-to-monetary-policy-asymmetric-in-china"
+class="section level3">
+<h3>Is the Response of Economic Output to Monetary Policy Asymmetric in
+China?</h3>
+<p><strong>Motivation:</strong> Since 2000, China’s economic growth has
+been very strong. It is now the second-largest economic engine in the
+world measured by nominal GDP, and the world’s largest economy by
+purchasing power parity, contributing 27 percent of global GDP in 2018.
+Despite this importance, there has been relatively little work done on
+understanding the effects of Chinese monetary policy. In this paper, I
+investigate how monetary policy instruments affect output growth and
+inflation, and whether this effect is asymmetric in high-growth periods
+vs. low-growth periods.</p>
+<p><strong>Method:</strong> I collected 34 monthly fundamental series
+that correlate with output and price in China. I pre-processed data to
+remove effects of the Lunar New Year, adjust for seasonality, impute
+missing values by an iterative expectation-maximization algorithm, and
+remove a local mean from each series using a biweight kernel. I
+extracted the latent economic activity factor and inflation factor from
+underlying variables with the first principal component using a dynamic
+factor model. I measured structural shocks of monetary policy from
+Choleski decomposition of residuals from a factor augmented vector
+autoregression model. As in Tenreyro &amp; Thwaites (2016), I measured
+probabilities of the unobservable states of the economy being in
+high-growth &amp; low-growth states using a smooth transition logistic
+function, and estimated impulse response functions of the economic
+activity factor and inflation factor using local projections
+methods.</p>
+<p><strong>Result</strong>: the monetary policy shock has larger impacts
+on output growth during low-growth states and the monetary policy shock
+has larger impacts on inflation rate during high-growth states. My paper
+is the first to study asymmetric effects of monetary policy on the
+Chinese economy over the business cycle.</p>
 <p><br></p>
 <center>
 <img src="images/field.jpg" style="width:75%; border:3px solid; margin-right: 20px" align="left">
 </center>
 <p><br></p>
-<p><em>The top figures in this panel present the economic activity factor and the inflation factor in China. The persistent decline in the economic activity growth and inflation during the late 2008 is aligned with the U.S. Great recession and the global financial crisis. The bottom figures in this panel present the impulse response function of the economic activity factor and inflation factor to a one percentage point increase in the identified monetary policy shock. The evidence shows that monetary policy is more powerful in impacting economic activity during low-growth states, and monetary policy is more powerful in impacting inflation during high-growth states.</em></p>
-<p><strong>Click <a href="files/CHAPTER2.pdf">here</a> for the most recent version of this project (August 2020)</strong></p>
-<p><strong>Click <a href="files/CH2-SLIDE.html">here</a> for presentation slides (May 2020)</strong></p>
+<p><em>The top figures in this panel present the economic activity
+factor and the inflation factor in China. The persistent decline in the
+economic activity growth and inflation during the late 2008 is aligned
+with the U.S. Great recession and the global financial crisis. The
+bottom figures in this panel present the impulse response function of
+the economic activity factor and inflation factor to a one percentage
+point increase in the identified monetary policy shock. The evidence
+shows that monetary policy is more powerful in impacting economic
+activity during low-growth states, and monetary policy is more powerful
+in impacting inflation during high-growth states.</em></p>
+<p><strong>Click <a href="files/CHAPTER2.pdf">here</a> for the most
+recent version of this project (August 2020)</strong></p>
+<p><strong>Click <a href="files/CH2-SLIDE.html">here</a> for
+presentation slides (May 2020)</strong></p>
 </div>
 
 
@@ -406,7 +497,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -424,7 +515,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
