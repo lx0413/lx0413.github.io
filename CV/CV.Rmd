@@ -48,7 +48,7 @@ tribble(
   ~ Position, ~ Year,  ~ Institution,  ~ Where,
   "Visiting Professor", "2023-", "Lewis & Clark College", "Portland, OR, USA",
   "Assistant Professor", "2021-2022",  "Butler University", "Indianapolis, IN, USA", 
-  "Research Fellow", "2021","Singapore Management University", "Singapore"
+  "Research Fellow", "2021","Singapore Management University", "Remote"
 ) %>% 
   detailed_entries(Position, Year, Institution, Where)
 ```
